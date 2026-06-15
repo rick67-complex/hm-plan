@@ -74,14 +74,15 @@ ${a.join(`
     "planStartDate": "2026-06-15",
     "planEndDate": "2026-09-20",
     "createdAt": "2026-06-14T00:00:00Z",
-    "updatedAt": "2026-06-14T00:00:00Z",
+    "updatedAt": "2026-06-15T00:00:00Z",
     "totalWeeks": 14,
     "generatedBy": "Claude Coach",
     "goal": {
       "primary": "1:42:00 (4:50/km)",
       "reach": "1:40:00 (4:44/km) — gated by Birell 10k",
       "pb": "1:53:22 (Karlovy Vary, 16 May 2026)"
-    }
+    },
+    "weeklySkeleton": "Mon easy-recovery · Tue rest · Wed Quality 1 + gym · Thu rest · Fri Quality 2 (build wks) · Sat rest · Sun long. No quality or test ever follows the long run."
   },
   "preferences": {
     "run": "kilometers",
@@ -322,7 +323,7 @@ ${a.join(`
       "startDate": "2026-06-15",
       "endDate": "2026-06-21",
       "phase": "Recovery",
-      "focus": "Reset after Olomouc + spring racing block",
+      "focus": "Reset after the spring racing block",
       "targetKm": 21,
       "isRecoveryWeek": true,
       "runsPlanned": 3,
@@ -336,7 +337,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 5k",
-              "description": "Zone 2, conversational. First run back. Keep it gentle, legs will feel the race.",
+              "description": "Zone 2, conversational. First run back — gentle, legs will feel the race.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 33,
@@ -349,11 +350,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w1-tue",
+              "id": "w1-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -367,7 +368,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 6k",
-              "description": "Zone 2, conversational. Add 4×15s relaxed strides at the end if legs feel good.",
+              "description": "Zone 2, conversational. Add 4×15s relaxed strides if legs feel good.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 40,
@@ -384,9 +385,9 @@ ${a.join(`
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Maintenance",
-              "description": "Light full-body, 2×8–10 easy. Just touch the movements. No soreness this week.",
+              "description": "Light full-body 2×8–10 easy + core. Touch the movements, no soreness.",
               "completed": false,
-              "durationMinutes": 55
+              "durationMinutes": 50
             }
           ]
         },
@@ -395,11 +396,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w1-fri",
+              "id": "w1-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -409,11 +410,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w1-sat",
+              "id": "w1-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -427,7 +428,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 10k",
-              "description": "Zone 2, conversational. Easy aerobic — no pace pressure. Pure time on feet.",
+              "description": "Zone 2, conversational. Easy aerobic, no pace pressure — time on feet.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 67,
@@ -446,8 +447,8 @@ ${a.join(`
       "startDate": "2026-06-22",
       "endDate": "2026-06-28",
       "phase": "Base + Threshold",
-      "focus": "Re-establish routine, wake up the legs",
-      "targetKm": 30,
+      "focus": "Re-establish routine, wake the legs up",
+      "targetKm": 29,
       "isRecoveryWeek": false,
       "runsPlanned": 3,
       "days": [
@@ -458,14 +459,13 @@ ${a.join(`
             {
               "id": "w2-mon",
               "sport": "run",
-              "type": "fartlek",
-              "name": "Fartlek 8k",
-              "description": "Z2 base with 6×1min surges to Z4 (~5:00/km feel), 90s easy between. Relaxed, not a workout to fear.",
+              "type": "recovery",
+              "name": "Recovery 7k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z2/Z4",
-              "durationMinutes": 52,
-              "distanceMeters": 8000,
-              "humanReadable": "WU 2.5k easy\nMain: 6 × (1min @ ~5:00/km, 90s easy jog)\nCD 2k easy"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 51,
+              "distanceMeters": 7000
             }
           ]
         },
@@ -474,11 +474,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w2-tue",
+              "id": "w2-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -490,13 +490,23 @@ ${a.join(`
             {
               "id": "w2-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. Add 5×20s strides after.",
+              "type": "fartlek",
+              "name": "Fartlek 8k",
+              "description": "Z2 base with 6×1min surges to ~5:00/km feel, 90s easy between. Relaxed.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z2/Z4",
+              "durationMinutes": 52,
+              "distanceMeters": 8000,
+              "humanReadable": "WU 2.5k easy\n6 × (1min @ ~5:00/km, 90s easy)\nCD 2k easy + 5×20s strides"
+            },
+            {
+              "id": "w2-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Strength",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -505,13 +515,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w2-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w2-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -520,11 +529,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w2-fri",
+              "id": "w2-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -534,11 +543,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w2-sat",
+              "id": "w2-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -552,18 +561,18 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 14k",
-              "description": "Easy Z2 throughout. Practice race fueling: take your gel ~45–50min in (same products as Prague/KV).",
+              "description": "Easy Z2. Rehearse race fuel: 1 gel ~45–50min in (same products as Prague/KV).",
               "completed": false,
               "primaryZone": "Z2 base",
               "durationMinutes": 95,
               "distanceMeters": 14000,
-              "humanReadable": "0–14k @ 6:45–7:00/km, HR Z2. Fuel rehearsal: 1 gel @ ~45min."
+              "humanReadable": "0–14k @ 6:45–7:00/km, HR Z2. Gel @ ~45min."
             }
           ]
         }
       ],
       "summary": {
-        "totalKm": 30.0,
+        "totalKm": 29.0,
         "runs": 3
       }
     },
@@ -572,8 +581,8 @@ ${a.join(`
       "startDate": "2026-06-29",
       "endDate": "2026-07-05",
       "phase": "Base + Threshold",
-      "focus": "FIELD TEST — set true threshold",
-      "targetKm": 32,
+      "focus": "FIELD TEST on fresh legs — set true threshold",
+      "targetKm": 30,
       "isRecoveryWeek": false,
       "runsPlanned": 3,
       "days": [
@@ -584,14 +593,13 @@ ${a.join(`
             {
               "id": "w3-mon",
               "sport": "run",
-              "type": "test",
-              "name": "30-min Threshold Test",
-              "description": "Benchmark to lock your real LTHR + threshold pace (your zone estimates are ~85%; this makes them exact).",
+              "type": "recovery",
+              "name": "Recovery 5k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs. Short and gentle — you test Wednesday, so prime, don't fatigue.",
               "completed": false,
-              "primaryZone": "Z4/Z5a",
-              "durationMinutes": 60,
-              "distanceMeters": 9500,
-              "humanReadable": "WU 15min easy + 4×100m strides\nMAIN: 30min time trial — hardest pace you can hold steady (run it like a race)\nRecord: avg HR of final 20min = LTHR; avg pace = threshold pace\nCD 10min easy\nSend me the numbers and I'll fine-tune all paces."
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 37,
+              "distanceMeters": 5000
             }
           ]
         },
@@ -600,11 +608,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w3-tue",
+              "id": "w3-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -616,13 +624,14 @@ ${a.join(`
             {
               "id": "w3-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. Very easy — you tested Monday.",
+              "type": "test",
+              "name": "30-min Threshold Test",
+              "description": "Fresh legs (Mon easy + Tue rest behind you). Locks your real LTHR + threshold pace so every pace in the plan is exact.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z4/Z5a",
+              "durationMinutes": 60,
+              "distanceMeters": 9500,
+              "humanReadable": "WU 15min easy + 4×100m strides\nMAIN: 30min time trial — hardest steady pace you can hold (run it like a race)\nRecord: avg HR final 20min = LTHR; avg pace = threshold pace\nCD 10min easy\nSend me the two numbers — I'll fine-tune all paces."
             }
           ]
         },
@@ -635,9 +644,9 @@ ${a.join(`
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
               "completed": false,
-              "durationMinutes": 55
+              "durationMinutes": 50
             }
           ]
         },
@@ -646,11 +655,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w3-fri",
+              "id": "w3-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -660,11 +669,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w3-sat",
+              "id": "w3-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -678,18 +687,18 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 15k",
-              "description": "Last 3k progress to steady (Z3, ~5:30/km). Fuel rehearsal again.",
+              "description": "Last 3k progress to steady (Z3 ~5:30). Fuel rehearsal again.",
               "completed": false,
               "primaryZone": "Z2 base",
               "durationMinutes": 102,
               "distanceMeters": 15000,
-              "humanReadable": "0–12k @ 6:45/km easy\n12–15k @ ~5:30/km steady\n1 gel @ 45min"
+              "humanReadable": "0–12k @ 6:45/km\n12–15k @ ~5:30/km\nGel @ 45min"
             }
           ]
         }
       ],
       "summary": {
-        "totalKm": 32.5,
+        "totalKm": 29.5,
         "runs": 3
       }
     },
@@ -698,7 +707,7 @@ ${a.join(`
       "startDate": "2026-07-06",
       "endDate": "2026-07-12",
       "phase": "Base + Threshold",
-      "focus": "Threshold development (4-run build week)",
+      "focus": "Threshold development (4-run build)",
       "targetKm": 43,
       "isRecoveryWeek": false,
       "runsPlanned": 4,
@@ -710,14 +719,13 @@ ${a.join(`
             {
               "id": "w4-mon",
               "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 5×1000m",
-              "description": "Threshold engine-builder. Use paces from your test; target ~5:00/km, HR ~LTHR.",
+              "type": "recovery",
+              "name": "Recovery 8k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z4 threshold",
-              "durationMinutes": 58,
-              "distanceMeters": 10000,
-              "humanReadable": "WU 15min easy + 4×100m strides\nMAIN: 5 × 1000m @ 5:00/km, 90s jog recovery\nCD 10min easy"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 59,
+              "distanceMeters": 8000
             }
           ]
         },
@@ -726,11 +734,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w4-tue",
+              "id": "w4-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -742,13 +750,23 @@ ${a.join(`
             {
               "id": "w4-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. 4th-run weeks: this stays genuinely easy + 5×20s strides.",
+              "type": "threshold",
+              "name": "Cruise Intervals 5×1000m",
+              "description": "Threshold engine-builder. Paces off your test; ~5:00/km, HR near LTHR.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z4 threshold",
+              "durationMinutes": 58,
+              "distanceMeters": 10000,
+              "humanReadable": "WU 15min easy + 4×100m strides\n5 × 1000m @ 5:00/km, 90s jog\nCD 10min easy"
+            },
+            {
+              "id": "w4-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Strength",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -757,13 +775,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w4-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w4-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -776,12 +793,12 @@ ${a.join(`
               "sport": "run",
               "type": "tempo",
               "name": "Tempo 20min",
-              "description": "Continuous Z4 sub-threshold. Comfortably hard, controlled.",
+              "description": "Continuous sub-threshold. Comfortably hard, controlled.",
               "completed": false,
               "primaryZone": "Z4",
               "durationMinutes": 50,
               "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\nMAIN: 20min continuous @ ~5:05/km (Z4)\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n20min continuous @ ~5:05/km\nCD 2k easy"
             }
           ]
         },
@@ -790,11 +807,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w4-sat",
+              "id": "w4-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -808,12 +825,12 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 16k",
-              "description": "Last 5k @ marathon/steady (Z3 ~5:30). Fuel every 45min.",
+              "description": "Last 5k @ steady (Z3 ~5:30). Fuel every 45min.",
               "completed": false,
               "primaryZone": "Z2 base",
               "durationMinutes": 108,
               "distanceMeters": 16000,
-              "humanReadable": "0–11k @ 6:45/km\n11–16k @ ~5:30/km steady"
+              "humanReadable": "0–11k @ 6:45/km\n11–16k @ ~5:30/km"
             }
           ]
         }
@@ -840,14 +857,13 @@ ${a.join(`
             {
               "id": "w5-mon",
               "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 4×1600m",
-              "description": "Longer threshold reps — biggest aerobic-power driver for the half.",
+              "type": "recovery",
+              "name": "Recovery 8k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z4 threshold",
-              "durationMinutes": 62,
-              "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 4×100m strides\nMAIN: 4 × 1600m @ 5:00/km, 2min jog\nCD 10min easy"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 59,
+              "distanceMeters": 8000
             }
           ]
         },
@@ -856,11 +872,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w5-tue",
+              "id": "w5-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -872,13 +888,23 @@ ${a.join(`
             {
               "id": "w5-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. Easy + 6×20s strides.",
+              "type": "threshold",
+              "name": "Cruise Intervals 4×1600m",
+              "description": "Longer threshold reps — biggest aerobic-power driver for the half.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z4 threshold",
+              "durationMinutes": 62,
+              "distanceMeters": 11000,
+              "humanReadable": "WU 15min + 4×100m strides\n4 × 1600m @ 5:00/km, 2min jog\nCD 10min easy"
+            },
+            {
+              "id": "w5-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Strength",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -887,13 +913,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w5-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w5-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -911,7 +936,7 @@ ${a.join(`
               "primaryZone": "Z4",
               "durationMinutes": 50,
               "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\nMAIN: 2 × 12min @ ~5:00/km, 3min easy between\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n2 × 12min @ ~5:00/km, 3min easy\nCD 2k easy"
             }
           ]
         },
@@ -920,11 +945,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w5-sat",
+              "id": "w5-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -943,7 +968,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 122,
               "distanceMeters": 18000,
-              "humanReadable": "0–12k @ 6:45/km\n12–18k @ ~5:25/km steady\nGel @ 40 & 80min"
+              "humanReadable": "0–12k @ 6:45/km\n12–18k @ ~5:25/km\nGel @ 40 & 80min"
             }
           ]
         }
@@ -970,14 +995,13 @@ ${a.join(`
             {
               "id": "w6-mon",
               "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 3×1000m",
-              "description": "Reduced volume, keep a touch of intensity.",
+              "type": "recovery",
+              "name": "Recovery 9k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z4",
-              "durationMinutes": 46,
-              "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\nMAIN: 3 × 1000m @ 5:00/km, 90s jog\nCD 10min"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 66,
+              "distanceMeters": 9000
             }
           ]
         },
@@ -986,11 +1010,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w6-tue",
+              "id": "w6-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1002,13 +1026,23 @@ ${a.join(`
             {
               "id": "w6-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 9k",
-              "description": "Zone 2, conversational.",
+              "type": "threshold",
+              "name": "Cruise Intervals 3×1000m",
+              "description": "Reduced volume, keep a touch of intensity.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 60,
-              "distanceMeters": 9000
+              "primaryZone": "Z4",
+              "durationMinutes": 46,
+              "distanceMeters": 8000,
+              "humanReadable": "WU 15min + strides\n3 × 1000m @ 5:00/km, 90s jog\nCD 10min"
+            },
+            {
+              "id": "w6-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Maintenance",
+              "description": "Light full-body 2×8–10 easy + core. Touch the movements, no soreness.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -1017,13 +1051,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w6-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w6-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -1032,11 +1065,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w6-fri",
+              "id": "w6-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1046,11 +1079,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w6-sat",
+              "id": "w6-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1084,7 +1117,7 @@ ${a.join(`
       "startDate": "2026-07-27",
       "endDate": "2026-08-02",
       "phase": "Thailand — Maintenance",
-      "focus": "Hold fitness in the heat. Minimal, easy. Heat = free acclimation.",
+      "focus": "Hold fitness in the heat — minimal, easy. Heat = free acclimation.",
       "targetKm": 24,
       "isRecoveryWeek": true,
       "runsPlanned": 3,
@@ -1098,7 +1131,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 7k",
-              "description": "Zone 2, conversational. Heat rule: run early AM or evening, slow down ~20–30s/km, hydrate hard. + 4×15s strides.",
+              "description": "Zone 2, conversational. Run early AM or evening, ~20–30s/km slower, hydrate hard. + 4×15s strides.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 46,
@@ -1111,11 +1144,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w7-tue",
+              "id": "w7-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1129,7 +1162,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 6k",
-              "description": "Zone 2, conversational. Easy shakeout. Effort over pace in heat.",
+              "description": "Zone 2, conversational. Easy shakeout — effort over pace in the heat.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 40,
@@ -1142,11 +1175,11 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w7-thu",
+              "id": "w7-thu-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1156,11 +1189,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w7-fri",
+              "id": "w7-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1170,11 +1203,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w7-sat",
+              "id": "w7-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1188,7 +1221,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 11k",
-              "description": "Zone 2, conversational. Easy long, by feel/HR (cap Z2). Walk breaks fine if hot. No heroics on holiday.",
+              "description": "Zone 2, conversational. Easy long by feel/HR (cap Z2). Walk breaks fine if hot. No heroics on holiday.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 73,
@@ -1219,14 +1252,13 @@ ${a.join(`
             {
               "id": "w8-mon",
               "sport": "run",
-              "type": "fartlek",
-              "name": "Heat Fartlek 7k",
-              "description": "Z2 + 8×30s relaxed pickups. Keeps neuromuscular feel without stress.",
+              "type": "easy",
+              "name": "Easy 7k",
+              "description": "Zone 2, conversational. Easy, heat-adjusted effort.",
               "completed": false,
-              "primaryZone": "Z2",
-              "durationMinutes": 47,
-              "distanceMeters": 7000,
-              "humanReadable": "WU 2k easy\n8 × (30s brisk, 90s easy)\nCD 2k easy"
+              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
+              "durationMinutes": 46,
+              "distanceMeters": 7000
             }
           ]
         },
@@ -1235,11 +1267,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w8-tue",
+              "id": "w8-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1251,13 +1283,14 @@ ${a.join(`
             {
               "id": "w8-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 7k",
-              "description": "Zone 2, conversational. Easy. Heat-adjusted effort.",
+              "type": "fartlek",
+              "name": "Heat Fartlek 7k",
+              "description": "Z2 + 8×30s relaxed pickups. Keeps turnover without stress.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 46,
-              "distanceMeters": 7000
+              "primaryZone": "Z2",
+              "durationMinutes": 47,
+              "distanceMeters": 7000,
+              "humanReadable": "WU 2k easy\n8 × (30s brisk, 90s easy)\nCD 2k easy"
             }
           ]
         },
@@ -1266,11 +1299,11 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w8-thu",
+              "id": "w8-thu-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1280,11 +1313,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w8-fri",
+              "id": "w8-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1294,11 +1327,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w8-sat",
+              "id": "w8-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1312,7 +1345,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 12k",
-              "description": "Zone 2, conversational. Travel day Aug 9 — if flying, move this to Mon or skip. Don't force it.",
+              "description": "Zone 2, conversational. Travel day Aug 9 — if flying, move to Mon or skip. Don't force it.",
               "completed": false,
               "primaryZone": "Z2 (121–142 / 6:30–7:00)",
               "durationMinutes": 80,
@@ -1331,7 +1364,7 @@ ${a.join(`
       "startDate": "2026-08-10",
       "endDate": "2026-08-16",
       "phase": "Specific Build",
-      "focus": "Reintroduce sharp intensity + goal-pace work (4-run)",
+      "focus": "Reintroduce sharp intensity + goal-pace (4-run)",
       "targetKm": 46,
       "isRecoveryWeek": false,
       "runsPlanned": 4,
@@ -1343,14 +1376,13 @@ ${a.join(`
             {
               "id": "w9-mon",
               "sport": "run",
-              "type": "intervals",
-              "name": "VO2 5×1000m",
-              "description": "Top-end power back online after Thailand. Hard but controlled.",
+              "type": "recovery",
+              "name": "Recovery 8k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z5 VO2 (185+ / ~4:20)",
-              "durationMinutes": 58,
-              "distanceMeters": 10000,
-              "humanReadable": "WU 15min + 6×100m strides\nMAIN: 5 × 1000m @ 4:20/km, 400m (2:30) jog recovery\nCD 10min easy"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 59,
+              "distanceMeters": 8000
             }
           ]
         },
@@ -1359,11 +1391,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w9-tue",
+              "id": "w9-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1375,13 +1407,23 @@ ${a.join(`
             {
               "id": "w9-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. Easy + strides.",
+              "type": "intervals",
+              "name": "VO2 5×1000m",
+              "description": "Top-end power back after Thailand. Hard but controlled.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z5 VO2 (~4:20)",
+              "durationMinutes": 58,
+              "distanceMeters": 10000,
+              "humanReadable": "WU 15min + 6×100m strides\n5 × 1000m @ 4:20/km, 400m (2:30) jog\nCD 10min"
+            },
+            {
+              "id": "w9-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Strength",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -1390,13 +1432,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w9-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w9-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -1409,12 +1450,12 @@ ${a.join(`
               "sport": "run",
               "type": "tempo",
               "name": "Goal-Pace Tempo 3×2km",
-              "description": "First real touch of race pace. GP = 4:50/km (1:42); feel it as 'controlled-hard'.",
+              "description": "First real race-pace touch. GP = 4:50/km (1:42); 'controlled-hard'.",
               "completed": false,
               "primaryZone": "Z4/GP",
               "durationMinutes": 55,
               "distanceMeters": 10000,
-              "humanReadable": "WU 2.5k easy\nMAIN: 3 × 2km @ 4:50/km (GP), 2min jog\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n3 × 2km @ 4:50/km, 2min jog\nCD 2k easy"
             }
           ]
         },
@@ -1423,11 +1464,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w9-sat",
+              "id": "w9-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1446,7 +1487,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 122,
               "distanceMeters": 18000,
-              "humanReadable": "0–10k @ 6:45/km easy\nThen 2 × 4km @ 4:50/km (GP) with 1km easy float between\nGels @ 40 & 80min — your proven products"
+              "humanReadable": "0–10k @ 6:45/km easy\n2 × 4km @ 4:50/km (GP), 1km easy float between\nGels @ 40 & 80min"
             }
           ]
         }
@@ -1473,14 +1514,13 @@ ${a.join(`
             {
               "id": "w10-mon",
               "sport": "run",
-              "type": "intervals",
-              "name": "VO2 6×1000m",
-              "description": "Peak VO2 session. Hold form on the last two.",
+              "type": "recovery",
+              "name": "Recovery 9k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z5 VO2 (~4:15)",
-              "durationMinutes": 62,
-              "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 6×100m strides\nMAIN: 6 × 1000m @ 4:15/km, 400m jog\nCD 10min easy"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 66,
+              "distanceMeters": 9000
             }
           ]
         },
@@ -1489,11 +1529,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w10-tue",
+              "id": "w10-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1505,13 +1545,23 @@ ${a.join(`
             {
               "id": "w10-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 9k",
-              "description": "Zone 2, conversational. Easy + strides.",
+              "type": "intervals",
+              "name": "VO2 6×1000m",
+              "description": "Peak VO2 session. Hold form the last two.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 60,
-              "distanceMeters": 9000
+              "primaryZone": "Z5 VO2 (~4:15)",
+              "durationMinutes": 62,
+              "distanceMeters": 11000,
+              "humanReadable": "WU 15min + 6×100m strides\n6 × 1000m @ 4:15/km, 400m jog\nCD 10min"
+            },
+            {
+              "id": "w10-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Strength",
+              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -1520,13 +1570,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w10-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–60min: squat/hinge/lunge (3×6–8), single-leg work, push/pull, core (plank 3×45s, side plank, dead bug, bird dog). Moderate load. Protects against injury + builds late-race durability.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w10-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -1539,12 +1588,12 @@ ${a.join(`
               "sport": "run",
               "type": "tempo",
               "name": "Goal-Pace 3×3km",
-              "description": "Longer GP blocks — building the ability to hold 4:50 when tired.",
+              "description": "Longer GP blocks — holding 4:50 when tired.",
               "completed": false,
               "primaryZone": "GP",
               "durationMinutes": 60,
               "distanceMeters": 11000,
-              "humanReadable": "WU 2.5k easy\nMAIN: 3 × 3km @ 4:48–4:50/km, 90s jog\nCD 1.5k easy"
+              "humanReadable": "WU 2.5k easy\n3 × 3km @ 4:48–4:50/km, 90s jog\nCD 1.5k easy"
             }
           ]
         },
@@ -1553,11 +1602,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w10-sat",
+              "id": "w10-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1576,7 +1625,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 136,
               "distanceMeters": 20000,
-              "humanReadable": "0–8k @ 6:45/km\nThen 3 × 4km @ 4:50/km (GP), 1km easy float between\nFull race-day fueling + hydration"
+              "humanReadable": "0–8k @ 6:45/km\n3 × 4km @ 4:50/km (GP), 1km easy float\nFull race-day fueling + hydration"
             }
           ]
         }
@@ -1603,14 +1652,13 @@ ${a.join(`
             {
               "id": "w11-mon",
               "sport": "run",
-              "type": "intervals",
-              "name": "VO2 4×1000m (sharp)",
-              "description": "Reduced reps, crisp. Last big top-end before sharpening.",
+              "type": "recovery",
+              "name": "Recovery 8k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z5 (~4:10)",
-              "durationMinutes": 52,
-              "distanceMeters": 9000,
-              "humanReadable": "WU 15min + strides\nMAIN: 4 × 1000m @ 4:10–4:15/km, 400m jog\nCD 10min"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 59,
+              "distanceMeters": 8000
             }
           ]
         },
@@ -1619,11 +1667,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w11-tue",
+              "id": "w11-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1635,13 +1683,23 @@ ${a.join(`
             {
               "id": "w11-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 8k",
-              "description": "Zone 2, conversational. Easy + strides.",
+              "type": "intervals",
+              "name": "VO2 4×1000m (sharp)",
+              "description": "Reduced reps, crisp. Last big top-end before sharpening.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 53,
-              "distanceMeters": 8000
+              "primaryZone": "Z5 (~4:10)",
+              "durationMinutes": 52,
+              "distanceMeters": 9000,
+              "humanReadable": "WU 15min + strides\n4 × 1000m @ 4:10–4:15/km, 400m jog\nCD 10min"
+            },
+            {
+              "id": "w11-wed-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Gym — Power",
+              "description": "Explosive full-body: 3–4×4–6 reps fast (jump squats, trap-bar, med-ball) + core. Low fatigue, keeps power.",
+              "completed": false,
+              "durationMinutes": 50
             }
           ]
         },
@@ -1650,13 +1708,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w11-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Power",
-              "description": "Full-body, explosive: 3–4×4–6 reps lighter+fast (jump squats, trap-bar, med-ball), full core. Keeps power, low fatigue.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w11-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -1669,7 +1726,7 @@ ${a.join(`
               "sport": "run",
               "type": "tempo",
               "name": "GP Primer 2×3km",
-              "description": "Light touch before the big Sunday sim.",
+              "description": "Light touch before Sunday's big sim.",
               "completed": false,
               "primaryZone": "GP",
               "durationMinutes": 50,
@@ -1683,11 +1740,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w11-sat",
+              "id": "w11-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1701,12 +1758,12 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 21k",
-              "description": "RACE SIMULATION — the key confidence session. Big chunk at GP. Rehearse everything: kit, gels, caffeine timing, pre-run meal ~3h before.",
+              "description": "RACE SIMULATION — the key confidence session. Rehearse everything: kit, gels, caffeine timing, pre-run meal ~3h before.",
               "completed": false,
               "primaryZone": "Z2 base",
               "durationMinutes": 142,
               "distanceMeters": 21000,
-              "humanReadable": "0–5k @ 6:40/km easy\n5–19k = 14km @ 4:50/km (GP) — hold form, even effort\n19–21k easy\nThis is your dress rehearsal for 1:42."
+              "humanReadable": "0–5k @ 6:40/km easy\n5–19k = 14km @ 4:50/km (GP), even effort, hold form\n19–21k easy\nYour dress rehearsal for 1:42."
             }
           ]
         }
@@ -1721,8 +1778,8 @@ ${a.join(`
       "startDate": "2026-08-31",
       "endDate": "2026-09-06",
       "phase": "Sharpen & Tune-up",
-      "focus": "Freshen up + race Birell 10k (5 Sep) as your fitness test",
-      "targetKm": 33,
+      "focus": "Freshen + Birell 10k (Sat 5 Sep) as your fitness test",
+      "targetKm": 30,
       "isRecoveryWeek": true,
       "runsPlanned": 3,
       "days": [
@@ -1733,14 +1790,13 @@ ${a.join(`
             {
               "id": "w12-mon",
               "sport": "run",
-              "type": "intervals",
-              "name": "Sharpener 5×800m",
-              "description": "Leg-speed, low volume. Stay smooth.",
+              "type": "recovery",
+              "name": "Recovery 6k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z5",
-              "durationMinutes": 46,
-              "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n5 × 800m @ 4:10/km, 400m jog\nCD 10min"
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 44,
+              "distanceMeters": 6000
             }
           ]
         },
@@ -1749,11 +1805,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w12-tue",
+              "id": "w12-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1765,13 +1821,14 @@ ${a.join(`
             {
               "id": "w12-wed",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 6k",
-              "description": "Zone 2, conversational. Easy + 4×20s strides.",
+              "type": "intervals",
+              "name": "Sharpener 5×800m",
+              "description": "Leg-speed, low volume, smooth.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 40,
-              "distanceMeters": 6000
+              "primaryZone": "Z5",
+              "durationMinutes": 46,
+              "distanceMeters": 8000,
+              "humanReadable": "WU 15min + strides\n5 × 800m @ 4:10/km, 400m jog\nCD 10min"
             }
           ]
         },
@@ -1780,13 +1837,12 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w12-thu",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Maintenance",
-              "description": "Light full-body, 2×8–10 easy. Just touch the movements. No soreness this week.",
-              "completed": false,
-              "durationMinutes": 55
+              "id": "w12-thu-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
+              "completed": false
             }
           ]
         },
@@ -1799,7 +1855,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Shake-out 4k + strides",
-              "description": "Pre-race primer. Legs snappy, not tired.",
+              "description": "Pre-race primer — snappy, not tired.",
               "completed": false,
               "primaryZone": "Z1/Z2",
               "durationMinutes": 27,
@@ -1817,12 +1873,12 @@ ${a.join(`
               "sport": "run",
               "type": "race",
               "name": "BIRELL 10k — Prague (TEST)",
-              "description": "Race it. This calibrates the final 2 weeks and gates the 1:40 reach.",
+              "description": "Race it. Calibrates the final 2 weeks and gates the 1:40 reach.",
               "completed": false,
               "primaryZone": "Z4→Z5",
               "durationMinutes": 60,
               "distanceMeters": 12000,
-              "humanReadable": "WU 2k easy + 4×100m strides + 2×200m @ goal\nTARGET: ~46:00–46:40 → on track for 1:42 | ~45:20 → 1:40 is LIVE\nPacing: even — first 2k @ 4:38–4:40, then 4:34–4:36, last 2k empty the tank\nCD 1.5k easy\nSend me the result."
+              "humanReadable": "WU 2k easy + 4×100m strides + 2×200m @ goal\nTARGET: ~46:00–46:40 → on track for 1:42 | ~45:20 → 1:40 LIVE\nEven pacing: first 2k @ 4:38–4:40, then 4:34–4:36, last 2k empty\nCD 1.5k easy\nSend me the result."
             }
           ]
         },
@@ -1831,11 +1887,11 @@ ${a.join(`
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w12-sun",
+              "id": "w12-sun-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1852,7 +1908,7 @@ ${a.join(`
       "endDate": "2026-09-13",
       "phase": "Taper & Race",
       "focus": "Recover from Birell, hold sharpness",
-      "targetKm": 30,
+      "targetKm": 28,
       "isRecoveryWeek": true,
       "runsPlanned": 3,
       "days": [
@@ -1863,12 +1919,12 @@ ${a.join(`
             {
               "id": "w13-mon",
               "sport": "run",
-              "type": "easy",
-              "name": "Easy 6k",
-              "description": "Zone 2, conversational. Easy recovery from the 10k.",
+              "type": "recovery",
+              "name": "Recovery 6k",
+              "description": "Very easy — day after the long run. Slower than easy, just flush the legs. Easy recovery from the 10k.",
               "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 40,
+              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
+              "durationMinutes": 44,
               "distanceMeters": 6000
             }
           ]
@@ -1878,11 +1934,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w13-tue",
+              "id": "w13-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1896,12 +1952,12 @@ ${a.join(`
               "sport": "run",
               "type": "threshold",
               "name": "Sharpener 3×1km",
-              "description": "Short and sharp — keep the system primed, no fatigue.",
+              "description": "Short and sharp — keep primed, no fatigue.",
               "completed": false,
-              "primaryZone": "Z4",
+              "primaryZone": "Z4/GP",
               "durationMinutes": 46,
               "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n3 × 1km @ 4:45/km (GP-ish), 2min jog\nCD 10min"
+              "humanReadable": "WU 15min + strides\n3 × 1km @ 4:45/km, 2min jog\nCD 10min"
             }
           ]
         },
@@ -1914,9 +1970,9 @@ ${a.join(`
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Maintenance",
-              "description": "Light full-body, 2×8–10 easy. Just touch the movements. No soreness this week.",
+              "description": "Light full-body 2×8–10 easy + core. Touch the movements, no soreness.",
               "completed": false,
-              "durationMinutes": 55
+              "durationMinutes": 50
             }
           ]
         },
@@ -1925,11 +1981,11 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w13-fri",
+              "id": "w13-fri-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1939,11 +1995,11 @@ ${a.join(`
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w13-sat",
+              "id": "w13-sat-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -1991,7 +2047,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Easy 5k + strides",
-              "description": "Stay loose. Legs should feel springy by now.",
+              "description": "Stay loose — legs should feel springy.",
               "completed": false,
               "primaryZone": "Z2",
               "durationMinutes": 34,
@@ -2005,11 +2061,11 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w14-tue",
+              "id": "w14-tue-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
@@ -2023,7 +2079,7 @@ ${a.join(`
               "sport": "run",
               "type": "tempo",
               "name": "Race-Pace Primer 3×1km",
-              "description": "Final pace touch — lock in what 4:50/km feels like. Then done working.",
+              "description": "Final pace touch — lock in 4:50/km. Then done working.",
               "completed": false,
               "primaryZone": "GP",
               "durationMinutes": 34,
@@ -2056,7 +2112,7 @@ ${a.join(`
               "sport": "run",
               "type": "easy",
               "name": "Shake-out 3k + strides",
-              "description": "Day before. Open the legs, then feet up. Hydrate, carb-load lunch/dinner.",
+              "description": "Day before — open the legs, then feet up. Hydrate, carb-load lunch + dinner.",
               "completed": false,
               "primaryZone": "Z1/Z2",
               "durationMinutes": 21,
@@ -2076,7 +2132,7 @@ ${a.join(`
               "name": "ÚSTÍ NAD LABEM ½ MARATHON",
               "description": "Race day. Flat, fast 'Ferrari' course. Even splits — the discipline you missed in Olomouc wins this.",
               "completed": false,
-              "primaryZone": "Z4 (target ~170–176 bpm)",
+              "primaryZone": "Z4 (~170–176 bpm)",
               "durationMinutes": 102,
               "distanceMeters": 21097,
               "humanReadable": "See race strategy panel — even pacing, fuel as rehearsed, trust the build."
@@ -2088,11 +2144,11 @@ ${a.join(`
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w14-sun",
+              "id": "w14-sun-r",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Recovery is where adaptation happens.",
+              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
               "completed": false
             }
           ]
