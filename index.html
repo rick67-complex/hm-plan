@@ -61,11 +61,115 @@ ${a.join(`
     <style rel="stylesheet" crossorigin>*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}:root,[data-theme=dark]{--bg-primary: #0a0a0b;--bg-secondary: #141416;--bg-tertiary: #1c1c1f;--bg-elevated: #232327;--text-primary: #fafafa;--text-secondary: #a1a1aa;--text-muted: #71717a;--border-subtle: rgba(255, 255, 255, .06);--border-medium: rgba(255, 255, 255, .1);--swim: #06b6d4;--swim-glow: rgba(6, 182, 212, .15);--swim-dark: #0e7490;--bike: #22c55e;--bike-glow: rgba(34, 197, 94, .15);--bike-dark: #15803d;--run: #f97316;--run-glow: rgba(249, 115, 22, .15);--run-dark: #c2410c;--strength: #a855f7;--strength-glow: rgba(168, 85, 247, .15);--strength-dark: #7e22ce;--brick: #ec4899;--brick-glow: rgba(236, 72, 153, .15);--brick-dark: #be185d;--race: #eab308;--race-glow: rgba(234, 179, 8, .2);--race-dark: #a16207;--rest: #52525b;--rest-glow: rgba(82, 82, 91, .15);--accent: #eab308;--accent-glow: rgba(234, 179, 8, .2);--phase-base: #3b82f6;--phase-build: #8b5cf6;--phase-peak: #ec4899;--phase-taper: #14b8a6;--transition-fast: .15s;--transition-normal: .25s;--transition-slow: .4s;--sidebar-width: 320px}[data-theme=light]{--bg-primary: #f8fafc;--bg-secondary: #ffffff;--bg-tertiary: #f1f5f9;--bg-elevated: #e2e8f0;--text-primary: #0f172a;--text-secondary: #475569;--text-muted: #94a3b8;--border-subtle: rgba(0, 0, 0, .06);--border-medium: rgba(0, 0, 0, .12);--swim: #0891b2;--swim-glow: rgba(8, 145, 178, .12);--swim-dark: #0e7490;--bike: #16a34a;--bike-glow: rgba(22, 163, 74, .12);--bike-dark: #15803d;--run: #ea580c;--run-glow: rgba(234, 88, 12, .12);--run-dark: #c2410c;--strength: #9333ea;--strength-glow: rgba(147, 51, 234, .12);--strength-dark: #7e22ce;--brick: #db2777;--brick-glow: rgba(219, 39, 119, .12);--brick-dark: #be185d;--race: #ca8a04;--race-glow: rgba(202, 138, 4, .15);--race-dark: #a16207;--rest: #71717a;--rest-glow: rgba(113, 113, 122, .1);--accent: #ca8a04;--accent-glow: rgba(202, 138, 4, .15)}html{font-size:15px;scroll-behavior:smooth}body{font-family:Outfit,-apple-system,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;min-height:100vh;overflow-x:hidden}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:var(--bg-secondary)}::-webkit-scrollbar-thumb{background:var(--bg-elevated);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}.app{display:flex;min-height:100vh}button{font-family:inherit;cursor:pointer}input,select{font-family:inherit}input:focus,select:focus{outline:none}.sidebar.svelte-dkgmtr{width:var(--sidebar-width);background:var(--bg-secondary);border-right:1px solid var(--border-subtle);padding:2rem 1.5rem;display:flex;flex-direction:column;gap:2rem;position:fixed;top:0;left:0;height:100vh;overflow-y:auto;z-index:100}.event-header.svelte-dkgmtr{text-align:center;padding-bottom:1.5rem;border-bottom:1px solid var(--border-subtle)}.event-name.svelte-dkgmtr{font-family:Playfair Display,serif;font-size:1.8rem;font-weight:700;letter-spacing:-.02em;background:linear-gradient(135deg,var(--text-primary),var(--text-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}.event-date.svelte-dkgmtr{font-family:JetBrains Mono,monospace;font-size:.85rem;color:var(--accent);font-weight:500;letter-spacing:.05em}.athlete-name.svelte-dkgmtr{font-size:.9rem;color:var(--text-muted);margin-top:.5rem}.progress-section.svelte-dkgmtr{text-align:center}.progress-ring-container.svelte-dkgmtr{position:relative;width:140px;height:140px;margin:0 auto 1rem}.progress-ring.svelte-dkgmtr{transform:rotate(-90deg)}.progress-ring-bg.svelte-dkgmtr{fill:none;stroke:var(--bg-tertiary);stroke-width:8}.progress-ring-fill.svelte-dkgmtr{fill:none;stroke:url(#progressGradient);stroke-width:8;stroke-linecap:round;stroke-dasharray:377;transition:stroke-dashoffset 1s ease-out}.progress-text.svelte-dkgmtr{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}.progress-percent.svelte-dkgmtr{font-family:JetBrains Mono,monospace;font-size:2rem;font-weight:500;color:var(--text-primary)}.progress-label.svelte-dkgmtr{font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em}.stats-grid.svelte-dkgmtr{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}.stat-card.svelte-dkgmtr{background:var(--bg-tertiary);border-radius:12px;padding:1rem;text-align:center;border:1px solid var(--border-subtle)}.stat-value.svelte-dkgmtr{font-family:JetBrains Mono,monospace;font-size:1.4rem;font-weight:500;color:var(--text-primary)}.stat-label.svelte-dkgmtr{font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-top:.25rem}.sport-stats.svelte-dkgmtr{display:flex;flex-direction:column;gap:.5rem}.sport-stats-header.svelte-dkgmtr{display:flex;align-items:center;justify-content:space-between;margin-bottom:.25rem}.sport-stats-header.svelte-dkgmtr h3:where(.svelte-dkgmtr){font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted)}.clear-filter.svelte-dkgmtr{font-size:.7rem;color:var(--accent);background:none;border:none;padding:0;cursor:pointer;text-transform:uppercase;letter-spacing:.05em;font-weight:500}.clear-filter.svelte-dkgmtr:hover{text-decoration:underline}.sport-stat.svelte-dkgmtr{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--bg-tertiary);border-radius:10px;border:1px solid var(--border-subtle);cursor:pointer;transition:all var(--transition-fast);width:100%;text-align:left}.sport-stat.svelte-dkgmtr:hover{background:var(--bg-elevated);border-color:var(--border-medium)}.sport-stat.active.svelte-dkgmtr{border-color:var(--text-muted)}.sport-stat.active.swim.svelte-dkgmtr{border-color:var(--swim);background:var(--swim-glow)}.sport-stat.active.bike.svelte-dkgmtr{border-color:var(--bike);background:var(--bike-glow)}.sport-stat.active.run.svelte-dkgmtr{border-color:var(--run);background:var(--run-glow)}.sport-stat.active.strength.svelte-dkgmtr{border-color:var(--strength);background:var(--strength-glow)}.sport-stat.active.brick.svelte-dkgmtr{border-color:var(--brick);background:var(--brick-glow)}.sport-stat.active.race.svelte-dkgmtr{border-color:var(--race);background:var(--race-glow)}.sport-icon.svelte-dkgmtr{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}.sport-icon.swim.svelte-dkgmtr{background:var(--swim-glow)}.sport-icon.bike.svelte-dkgmtr{background:var(--bike-glow)}.sport-icon.run.svelte-dkgmtr{background:var(--run-glow)}.sport-icon.strength.svelte-dkgmtr{background:var(--strength-glow)}.sport-icon.brick.svelte-dkgmtr{background:var(--brick-glow)}.sport-icon.race.svelte-dkgmtr{background:var(--race-glow)}.sport-info.svelte-dkgmtr{flex:1}.sport-name.svelte-dkgmtr{font-size:.85rem;font-weight:500;color:var(--text-primary)}.sport-hours.svelte-dkgmtr{font-family:JetBrains Mono,monospace;font-size:.8rem;color:var(--text-muted)}.check-icon.svelte-dkgmtr{color:var(--accent);font-weight:600;font-size:.9rem}.filters-section.svelte-dkgmtr h3:where(.svelte-dkgmtr){font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:.75rem}.filter-group.svelte-dkgmtr{display:flex;flex-wrap:wrap;gap:.5rem}.filter-chip.svelte-dkgmtr{padding:.4rem .8rem;font-size:.8rem;font-weight:500;border-radius:20px;border:1px solid var(--border-medium);background:transparent;color:var(--text-secondary);transition:all var(--transition-fast)}.filter-chip.svelte-dkgmtr:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.filter-chip.active.svelte-dkgmtr{background:var(--text-primary);color:var(--bg-primary);border-color:var(--text-primary)}.settings-btn.svelte-dkgmtr{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;padding:.75rem 1rem;border-radius:10px;background:var(--bg-tertiary);border:1px solid var(--border-medium);color:var(--text-secondary);font-size:.85rem;font-weight:500;transition:all var(--transition-fast)}.settings-btn.svelte-dkgmtr:hover{background:var(--bg-elevated);color:var(--text-primary);border-color:var(--border-medium)}.settings-btn.svelte-dkgmtr svg:where(.svelte-dkgmtr){width:18px;height:18px}.export-section.svelte-dkgmtr{display:flex;flex-direction:column;gap:.75rem}.export-status.svelte-dkgmtr{font-size:.75rem;color:var(--accent);padding:.4rem .75rem;background:var(--accent-glow);border-radius:6px;text-align:center}.export-status.error.svelte-dkgmtr{color:#ef4444;background:#ef44441a}.export-main.svelte-dkgmtr{position:relative}.export-main-btn.svelte-dkgmtr{display:flex;align-items:center;gap:.75rem;width:100%;padding:1rem 1.25rem;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--run));border:none;color:#fff;font-size:.85rem;font-weight:500;transition:all var(--transition-fast);cursor:pointer;text-align:left}.export-main-btn.svelte-dkgmtr:hover{transform:translateY(-1px);box-shadow:0 4px 12px #eab3084d}.export-main-btn.svelte-dkgmtr:active{transform:translateY(0)}.export-main-btn.svelte-dkgmtr>svg:where(.svelte-dkgmtr):first-child{width:24px;height:24px;flex-shrink:0}.export-main-text.svelte-dkgmtr{display:flex;flex-direction:column;gap:.15rem;flex:1}.export-main-title.svelte-dkgmtr{font-size:.95rem;font-weight:600}.export-main-desc.svelte-dkgmtr{font-size:.7rem;opacity:.85}.dropdown-arrow.svelte-dkgmtr{width:16px;height:16px;opacity:.8;transition:transform var(--transition-fast)}.dropdown-arrow.open.svelte-dkgmtr{transform:rotate(180deg)}.export-divider.svelte-dkgmtr{height:1px;background:var(--border-subtle);margin:.25rem 0}.export-menu.svelte-dkgmtr{position:absolute;bottom:calc(100% + 8px);left:0;right:0;background:var(--bg-secondary);border:1px solid var(--border-medium);border-radius:10px;padding:.5rem;z-index:10;box-shadow:0 4px 20px #0000004d}.export-option.svelte-dkgmtr{display:flex;align-items:center;gap:.75rem;width:100%;padding:.6rem;border:none;background:transparent;color:var(--text-primary);border-radius:6px;cursor:pointer;transition:background var(--transition-fast);text-align:left}.export-option.svelte-dkgmtr:hover{background:var(--bg-tertiary)}.export-icon.svelte-dkgmtr{width:28px;height:28px;border-radius:6px;background:var(--bg-tertiary);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.75rem;color:var(--accent);flex-shrink:0}.export-icon.calendar.svelte-dkgmtr{background:var(--accent-glow)}.export-icon.calendar.svelte-dkgmtr svg:where(.svelte-dkgmtr){width:16px;height:16px}.export-name.svelte-dkgmtr{font-size:.8rem;font-weight:500}.export-desc.svelte-dkgmtr{font-size:.7rem;color:var(--text-muted)}.import-help-link.svelte-dkgmtr{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;padding:.6rem .75rem;border-radius:8px;background:transparent;border:1px dashed var(--border-medium);color:var(--text-muted);font-size:.75rem;font-weight:500;transition:all var(--transition-fast);margin-top:.5rem}.import-help-link.svelte-dkgmtr:hover{background:var(--bg-tertiary);color:var(--text-secondary);border-color:var(--border-medium);border-style:solid}.import-help-link.svelte-dkgmtr svg:where(.svelte-dkgmtr){width:14px;height:14px}@media(max-width:700px){.sidebar.svelte-dkgmtr{left:-100%;transition:left var(--transition-normal)}.sidebar.open.svelte-dkgmtr{left:0}}.workout-card.svelte-ynjai0{width:100%;text-align:left;padding:.6rem .75rem;border-radius:8px;cursor:pointer;transition:all var(--transition-fast);border:1px solid transparent;position:relative;overflow:hidden}.workout-card.svelte-ynjai0:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}.workout-card.swim.svelte-ynjai0{background:var(--swim-glow)}.workout-card.swim.svelte-ynjai0:before{background:var(--swim)}.workout-card.bike.svelte-ynjai0{background:var(--bike-glow)}.workout-card.bike.svelte-ynjai0:before{background:var(--bike)}.workout-card.run.svelte-ynjai0{background:var(--run-glow)}.workout-card.run.svelte-ynjai0:before{background:var(--run)}.workout-card.strength.svelte-ynjai0{background:var(--strength-glow)}.workout-card.strength.svelte-ynjai0:before{background:var(--strength)}.workout-card.brick.svelte-ynjai0{background:var(--brick-glow)}.workout-card.brick.svelte-ynjai0:before{background:var(--brick)}.workout-card.race.svelte-ynjai0{background:var(--race-glow)}.workout-card.race.svelte-ynjai0:before{background:var(--race)}.workout-card.rest.svelte-ynjai0{background:var(--rest-glow)}.workout-card.rest.svelte-ynjai0:before{background:var(--rest)}.workout-card.svelte-ynjai0:hover{transform:translateY(-2px);box-shadow:0 4px 20px #0000004d}.workout-card.dragging.svelte-ynjai0{opacity:.5;transform:scale(.95);cursor:grabbing}.workout-card.svelte-ynjai0:not(.dragging){cursor:grab}.workout-card.completed.svelte-ynjai0{opacity:.6}.workout-card.completed.svelte-ynjai0:after{content:"✓";position:absolute;top:.4rem;right:.5rem;font-size:.7rem;color:var(--text-muted)}.workout-sport.svelte-ynjai0{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem}.workout-card.swim.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--swim)}.workout-card.bike.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--bike)}.workout-card.run.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--run)}.workout-card.strength.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--strength)}.workout-card.brick.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--brick)}.workout-card.race.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--race)}.workout-card.rest.svelte-ynjai0 .workout-sport:where(.svelte-ynjai0){color:var(--rest)}.workout-name.svelte-ynjai0{font-size:.8rem;font-weight:500;color:var(--text-primary);line-height:1.3}.workout-duration.svelte-ynjai0{font-family:JetBrains Mono,monospace;font-size:.7rem;color:var(--text-muted);margin-top:.3rem}.week-card.svelte-ldqnzx{background:var(--bg-secondary);border-radius:16px;border:1px solid var(--border-subtle);overflow:hidden;opacity:0;transform:translateY(20px);animation:svelte-ldqnzx-slideUp .5s ease forwards}@keyframes svelte-ldqnzx-slideUp{to{opacity:1;transform:translateY(0)}}.week-header.svelte-ldqnzx{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;background:var(--bg-tertiary);border-bottom:1px solid var(--border-subtle)}.week-title.svelte-ldqnzx{display:flex;align-items:center;gap:1rem}.week-number.svelte-ldqnzx{font-family:JetBrains Mono,monospace;font-size:.75rem;font-weight:500;padding:.3rem .6rem;border-radius:6px;background:var(--bg-primary);color:var(--text-secondary)}.week-phase.svelte-ldqnzx{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}.week-phase.base.svelte-ldqnzx{color:var(--phase-base)}.week-phase.build.svelte-ldqnzx{color:var(--phase-build)}.week-phase.peak.svelte-ldqnzx{color:var(--phase-peak)}.week-phase.taper.svelte-ldqnzx{color:var(--phase-taper)}.week-phase.survival.svelte-ldqnzx{color:var(--text-muted)}.week-phase.bank.svelte-ldqnzx{color:var(--phase-base)}.week-focus.svelte-ldqnzx{font-size:.85rem;color:var(--text-muted)}.week-hours.svelte-ldqnzx{font-family:JetBrains Mono,monospace;font-size:.9rem;color:var(--text-secondary)}.week-hours.svelte-ldqnzx span:where(.svelte-ldqnzx){color:var(--text-primary);font-weight:500}.days-grid.svelte-ldqnzx{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--border-subtle)}.day-column.svelte-ldqnzx{background:var(--bg-secondary);min-height:160px;padding:.75rem;display:flex;flex-direction:column;gap:.5rem;transition:background-color .15s ease}.day-column.today.svelte-ldqnzx{background:var(--bg-tertiary)}.day-column.today.svelte-ldqnzx .day-name:where(.svelte-ldqnzx){color:var(--accent)}.day-column.drag-over.svelte-ldqnzx{background:var(--accent-glow);outline:2px dashed var(--accent);outline-offset:-2px}.day-header.svelte-ldqnzx{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--border-subtle)}.day-name.svelte-ldqnzx{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted)}.day-date.svelte-ldqnzx{font-family:JetBrains Mono,monospace;font-size:.75rem;color:var(--text-muted)}.empty-day.svelte-ldqnzx{flex:1;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:.8rem;font-style:italic}.add-workout-btn.svelte-ldqnzx{margin-top:auto;padding:.5rem;border:1px dashed var(--border-medium);border-radius:8px;background:transparent;color:var(--text-muted);display:flex;align-items:center;justify-content:center;transition:all var(--transition-fast);opacity:0}.day-column.svelte-ldqnzx:hover .add-workout-btn:where(.svelte-ldqnzx){opacity:1}.add-workout-btn.svelte-ldqnzx:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.add-workout-btn.svelte-ldqnzx svg:where(.svelte-ldqnzx){width:16px;height:16px}@media(max-width:1200px){.days-grid.svelte-ldqnzx{grid-template-columns:repeat(4,1fr)}}@media(max-width:900px){.days-grid.svelte-ldqnzx{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.days-grid.svelte-ldqnzx{grid-template-columns:1fr}}.phase-timeline.svelte-aq400f{display:flex;gap:4px;margin-bottom:1.5rem;padding:0 1rem}.phase-segment.svelte-aq400f{flex:1;height:28px;border-radius:6px;border:none;cursor:pointer;transition:all var(--transition-fast);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#64748b,#475569)}.phase-segment.svelte-aq400f:hover{filter:brightness(1.2)}.phase-segment.svelte-aq400f:active{transform:scale(.98)}.phase-label.svelte-aq400f{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#ffffffe6;text-shadow:0 1px 2px rgba(0,0,0,.3)}.phase-segment.base.svelte-aq400f{background:linear-gradient(135deg,#3b82f6,#2563eb)}.phase-segment.build.svelte-aq400f{background:linear-gradient(135deg,#8b5cf6,#7c3aed)}.phase-segment.peak.svelte-aq400f{background:linear-gradient(135deg,#ec4899,#db2777)}.phase-segment.taper.svelte-aq400f{background:linear-gradient(135deg,#14b8a6,#0d9488)}.phase-segment.recovery.svelte-aq400f{background:linear-gradient(135deg,#6b7280,#4b5563)}.phase-segment.rebuild.svelte-aq400f{background:linear-gradient(135deg,#f97316,#ea580c)}.phase-segment.survival.svelte-aq400f{background:linear-gradient(135deg,#f59e0b,#d97706)}.phase-segment.bank.svelte-aq400f{background:linear-gradient(135deg,#10b981,#059669)}.weeks-container.svelte-aq400f{display:flex;flex-direction:column;gap:1.5rem}.modal-overlay.svelte-12rtkin{position:fixed;inset:0;background:#000c;backdrop-filter:blur(8px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:2rem;opacity:0;visibility:hidden;transition:all var(--transition-normal)}.modal-overlay.active.svelte-12rtkin{opacity:1;visibility:visible}.modal.svelte-12rtkin{background:var(--bg-secondary);border-radius:20px;max-width:600px;width:100%;max-height:85vh;overflow:hidden;transform:scale(.9) translateY(20px);transition:transform var(--transition-normal);border:1px solid var(--border-medium);position:relative;display:flex;flex-direction:column}.modal-overlay.active.svelte-12rtkin .modal:where(.svelte-12rtkin){transform:scale(1) translateY(0)}.modal-header.svelte-12rtkin{padding:1.5rem 2rem;border-bottom:1px solid var(--border-subtle);display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-shrink:0}.modal-sport-badge.svelte-12rtkin{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .8rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}.modal-sport-badge.swim.svelte-12rtkin{background:var(--swim-glow);color:var(--swim)}.modal-sport-badge.bike.svelte-12rtkin{background:var(--bike-glow);color:var(--bike)}.modal-sport-badge.run.svelte-12rtkin{background:var(--run-glow);color:var(--run)}.modal-sport-badge.strength.svelte-12rtkin{background:var(--strength-glow);color:var(--strength)}.modal-sport-badge.brick.svelte-12rtkin{background:var(--brick-glow);color:var(--brick)}.modal-sport-badge.race.svelte-12rtkin{background:var(--race-glow);color:var(--race)}.modal-sport-badge.rest.svelte-12rtkin{background:var(--rest-glow);color:var(--rest)}.modal-title.svelte-12rtkin{font-size:1.4rem;font-weight:600;color:var(--text-primary)}.modal-date.svelte-12rtkin{font-family:JetBrains Mono,monospace;font-size:.85rem;color:var(--text-muted);margin-top:.25rem}.modal-close.svelte-12rtkin{width:36px;height:36px;border-radius:50%;border:1px solid var(--border-medium);background:transparent;color:var(--text-muted);font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all var(--transition-fast);flex-shrink:0}.modal-close.svelte-12rtkin:hover{background:var(--bg-tertiary);color:var(--text-primary)}.modal-body.svelte-12rtkin{padding:1.5rem 2rem;overflow-y:auto;flex:1}.modal-stats.svelte-12rtkin{display:flex;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border-subtle)}.modal-stat.svelte-12rtkin{text-align:center}.modal-stat-value.svelte-12rtkin{font-family:JetBrains Mono,monospace;font-size:1.5rem;font-weight:500;color:var(--text-primary)}.modal-stat-label.svelte-12rtkin{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted)}.modal-section.svelte-12rtkin{margin-bottom:1.5rem}.modal-section-title.svelte-12rtkin{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:.75rem}.modal-description.svelte-12rtkin{font-size:.95rem;color:var(--text-secondary);line-height:1.7}.workout-structure.svelte-12rtkin{background:var(--bg-tertiary);border-radius:12px;padding:1rem;font-family:JetBrains Mono,monospace;font-size:.85rem;line-height:1.8;color:var(--text-secondary);white-space:pre-wrap;margin:0}.form-grid.svelte-12rtkin{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}.form-row.svelte-12rtkin{display:flex;flex-direction:column;gap:.5rem}.form-row.full.svelte-12rtkin{margin-bottom:1rem}.form-label.svelte-12rtkin{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted)}.form-input.svelte-12rtkin,.form-select.svelte-12rtkin,.form-textarea.svelte-12rtkin{background:var(--bg-tertiary);border:1px solid var(--border-medium);border-radius:8px;padding:.75rem 1rem;color:var(--text-primary);font-size:.9rem;transition:border-color var(--transition-fast)}.form-input.svelte-12rtkin:focus,.form-select.svelte-12rtkin:focus,.form-textarea.svelte-12rtkin:focus{outline:none;border-color:var(--accent)}.form-textarea.svelte-12rtkin{resize:vertical;min-height:60px}.form-textarea.mono.svelte-12rtkin{font-family:JetBrains Mono,monospace;font-size:.85rem;line-height:1.6}.modal-footer.svelte-12rtkin{padding:1rem 2rem;border-top:1px solid var(--border-subtle);display:flex;justify-content:space-between;align-items:center;flex-shrink:0}.footer-left.svelte-12rtkin{display:flex;gap:.5rem}.icon-btn.svelte-12rtkin{width:40px;height:40px;border-radius:10px;border:1px solid var(--border-medium);background:transparent;color:var(--text-muted);display:flex;align-items:center;justify-content:center;transition:all var(--transition-fast)}.icon-btn.svelte-12rtkin svg:where(.svelte-12rtkin){width:18px;height:18px}.icon-btn.svelte-12rtkin:hover{background:var(--bg-tertiary);color:var(--text-primary)}.icon-btn.delete.svelte-12rtkin:hover{background:#ef44441a;border-color:#ef4444;color:#ef4444}.icon-btn.edit.svelte-12rtkin:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.complete-btn.svelte-12rtkin{display:flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:10px;font-size:.9rem;font-weight:500;transition:all var(--transition-fast);border:none}.complete-btn.mark.svelte-12rtkin{background:var(--accent);color:var(--bg-primary)}.complete-btn.mark.svelte-12rtkin:hover{background:#fbbf24;transform:translateY(-2px)}.complete-btn.unmark.svelte-12rtkin{background:var(--bg-tertiary);color:var(--text-secondary);border:1px solid var(--border-medium)}.complete-btn.unmark.svelte-12rtkin:hover{background:var(--bg-elevated)}.cancel-btn.svelte-12rtkin{padding:.75rem 1.5rem;border-radius:10px;font-size:.9rem;font-weight:500;background:var(--bg-tertiary);color:var(--text-secondary);border:1px solid var(--border-medium);transition:all var(--transition-fast)}.cancel-btn.svelte-12rtkin:hover{background:var(--bg-elevated);color:var(--text-primary)}.save-btn.svelte-12rtkin{padding:.75rem 1.5rem;border-radius:10px;font-size:.9rem;font-weight:500;background:var(--accent);color:var(--bg-primary);border:none;transition:all var(--transition-fast)}.save-btn.svelte-12rtkin:hover:not(:disabled){background:#fbbf24;transform:translateY(-2px)}.save-btn.svelte-12rtkin:disabled{opacity:.5;cursor:not-allowed}.confirm-overlay.svelte-12rtkin{position:absolute;inset:0;background:#000000b3;display:flex;align-items:center;justify-content:center;border-radius:20px}.confirm-dialog.svelte-12rtkin{background:var(--bg-secondary);border:1px solid var(--border-medium);border-radius:12px;padding:1.5rem;text-align:center}.confirm-dialog.svelte-12rtkin p:where(.svelte-12rtkin){font-size:1rem;color:var(--text-primary);margin-bottom:1rem}.confirm-actions.svelte-12rtkin{display:flex;gap:.75rem;justify-content:center}.delete-btn.svelte-12rtkin{padding:.75rem 1.5rem;border-radius:10px;font-size:.9rem;font-weight:500;background:#ef4444;color:#fff;border:none;transition:all var(--transition-fast)}.delete-btn.svelte-12rtkin:hover{background:#dc2626}.footer-right.svelte-12rtkin{display:flex;align-items:center;gap:.75rem}.export-dropdown.svelte-12rtkin{position:relative}.icon-btn.export.svelte-12rtkin:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.export-menu.svelte-12rtkin{position:absolute;bottom:calc(100% + 8px);left:0;background:var(--bg-secondary);border:1px solid var(--border-medium);border-radius:12px;padding:.5rem;min-width:200px;z-index:10;box-shadow:0 4px 20px #0000004d}.export-option.svelte-12rtkin{display:flex;align-items:center;gap:.75rem;width:100%;padding:.75rem;border:none;background:transparent;color:var(--text-primary);border-radius:8px;cursor:pointer;transition:background var(--transition-fast)}.export-option.svelte-12rtkin:hover{background:var(--bg-tertiary)}.export-icon.svelte-12rtkin{width:32px;height:32px;border-radius:6px;background:var(--bg-tertiary);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.85rem;color:var(--accent)}.export-info.svelte-12rtkin{text-align:left}.export-name.svelte-12rtkin{font-size:.9rem;font-weight:500}.export-desc.svelte-12rtkin{font-size:.75rem;color:var(--text-muted)}.export-status.svelte-12rtkin{font-size:.8rem;color:var(--accent);padding:.4rem .8rem;background:var(--accent-glow);border-radius:6px}.export-status.error.svelte-12rtkin{color:#ef4444;background:#ef44441a}.export-divider.svelte-12rtkin{height:1px;background:var(--border-subtle);margin:.5rem 0}.export-help-link.svelte-12rtkin{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;padding:.6rem;border:none;background:transparent;color:var(--text-muted);border-radius:6px;cursor:pointer;transition:all var(--transition-fast);font-size:.8rem}.export-help-link.svelte-12rtkin:hover{background:var(--bg-tertiary);color:var(--text-secondary)}.export-help-link.svelte-12rtkin svg:where(.svelte-12rtkin){width:14px;height:14px}.modal-overlay.svelte-1uhipit{position:fixed;inset:0;background:#000c;backdrop-filter:blur(8px);z-index:1000;display:flex;align-items:flex-start;justify-content:center;padding:2rem;padding-top:5vh;opacity:0;visibility:hidden;transition:all var(--transition-normal);overflow-y:auto}.modal-overlay.active.svelte-1uhipit{opacity:1;visibility:visible}.settings-modal.svelte-1uhipit{background:var(--bg-secondary);border-radius:20px;max-width:640px;width:100%;max-height:calc(90vh - 4rem);overflow:hidden;border:1px solid var(--border-medium);display:flex;flex-direction:column;flex-shrink:0}.modal-fixed-header.svelte-1uhipit{flex-shrink:0;background:var(--bg-secondary);border-bottom:1px solid var(--border-subtle)}.modal-header.svelte-1uhipit{padding:1.5rem 2rem 1rem;display:flex;align-items:center;justify-content:space-between}.modal-title.svelte-1uhipit{font-size:1.4rem;font-weight:600;color:var(--text-primary)}.modal-close.svelte-1uhipit{width:36px;height:36px;border-radius:50%;border:1px solid var(--border-medium);background:transparent;color:var(--text-muted);font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all var(--transition-fast)}.modal-close.svelte-1uhipit:hover{background:var(--bg-tertiary);color:var(--text-primary)}.settings-tabs.svelte-1uhipit{display:flex;gap:.25rem;padding:0 2rem 1rem}.settings-tab.svelte-1uhipit{padding:.5rem 1rem;font-size:.85rem;font-weight:500;border:none;background:transparent;color:var(--text-muted);border-radius:8px;transition:all var(--transition-fast)}.settings-tab.svelte-1uhipit:hover{background:var(--bg-tertiary);color:var(--text-secondary)}.settings-tab.active.svelte-1uhipit{background:var(--accent);color:var(--bg-primary)}.modal-body.svelte-1uhipit{padding:1.5rem 2rem 2rem;overflow-y:auto;flex:1}.settings-section.svelte-1uhipit{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border-subtle)}.settings-section.svelte-1uhipit:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}.settings-section-title.svelte-1uhipit{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:1rem}.theme-toggle.svelte-1uhipit{display:flex;gap:.5rem}.theme-btn.svelte-1uhipit{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem 1rem;border-radius:10px;border:1px solid var(--border-medium);background:transparent;color:var(--text-secondary);font-size:.85rem;font-weight:500;transition:all var(--transition-fast)}.theme-btn.svelte-1uhipit svg:where(.svelte-1uhipit){width:18px;height:18px}.theme-btn.svelte-1uhipit:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.theme-btn.active.svelte-1uhipit{background:var(--accent);color:var(--bg-primary);border-color:var(--accent)}.settings-row.svelte-1uhipit{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0}.settings-label.svelte-1uhipit{font-size:.9rem;color:var(--text-primary)}.settings-select.svelte-1uhipit{background:var(--bg-tertiary);border:1px solid var(--border-medium);border-radius:8px;padding:.5rem .75rem;color:var(--text-primary);font-size:.85rem;min-width:140px}.settings-select.svelte-1uhipit:focus{border-color:var(--accent)}.threshold-row.svelte-1uhipit{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;padding:.75rem;background:var(--bg-tertiary);border-radius:8px}.threshold-label.svelte-1uhipit{font-size:.85rem;color:var(--text-secondary)}.threshold-input.svelte-1uhipit{background:var(--bg-primary);border:1px solid var(--border-medium);border-radius:6px;padding:.5rem .75rem;color:var(--text-primary);font-family:JetBrains Mono,monospace;font-size:.9rem;width:80px;text-align:center}.recalc-btn.svelte-1uhipit{padding:.5rem 1rem;background:var(--accent);color:var(--bg-primary);border:none;border-radius:6px;font-size:.8rem;font-weight:500;transition:all var(--transition-fast)}.recalc-btn.svelte-1uhipit:hover{background:#fbbf24}.zones-grid.svelte-1uhipit{display:flex;flex-direction:column;gap:.5rem}.zone-row.svelte-1uhipit{display:grid;grid-template-columns:60px 1fr 80px 80px;gap:.75rem;align-items:center}.zone-row.header.svelte-1uhipit{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);padding-bottom:.25rem}.zone-badge.svelte-1uhipit{font-family:JetBrains Mono,monospace;font-size:.75rem;font-weight:600;padding:.3rem .5rem;border-radius:6px;text-align:center}.zone-badge.z1.svelte-1uhipit{background:#22c55e33;color:#22c55e}.zone-badge.z2.svelte-1uhipit{background:#3b82f633;color:#3b82f6}.zone-badge.z3.svelte-1uhipit{background:#eab30833;color:#eab308}.zone-badge.z4.svelte-1uhipit{background:#f9731633;color:#f97316}.zone-badge.z5.svelte-1uhipit{background:#ef444433;color:#ef4444}.zone-name.svelte-1uhipit{font-size:.85rem;color:var(--text-secondary)}.zone-input.svelte-1uhipit,.pace-input.svelte-1uhipit{background:var(--bg-tertiary);border:1px solid var(--border-medium);border-radius:6px;padding:.4rem .5rem;color:var(--text-primary);font-family:JetBrains Mono,monospace;font-size:.8rem;text-align:center;width:100%}.zone-input.svelte-1uhipit:focus,.pace-input.svelte-1uhipit:focus{border-color:var(--accent)}.help-details.svelte-1uhipit{margin-top:1rem;border:1px solid var(--border-subtle);border-radius:8px;overflow:hidden}.help-details.svelte-1uhipit summary:where(.svelte-1uhipit){padding:.75rem 1rem;font-size:.8rem;font-weight:500;color:var(--text-muted);cursor:pointer;background:var(--bg-tertiary);transition:all var(--transition-fast)}.help-details.svelte-1uhipit summary:where(.svelte-1uhipit):hover{color:var(--text-secondary)}.help-details[open].svelte-1uhipit summary:where(.svelte-1uhipit){border-bottom:1px solid var(--border-subtle)}.help-content.svelte-1uhipit{padding:1rem;font-size:.8rem;color:var(--text-secondary);line-height:1.6}.help-content.svelte-1uhipit ol:where(.svelte-1uhipit),.help-content.svelte-1uhipit ul:where(.svelte-1uhipit){margin:.5rem 0 .5rem 1.5rem}.help-content.svelte-1uhipit li:where(.svelte-1uhipit){margin-bottom:.25rem}.help-content.svelte-1uhipit p:where(.svelte-1uhipit){margin-bottom:.5rem}.help-content.svelte-1uhipit p:where(.svelte-1uhipit):last-child{margin-bottom:0}.help-note.svelte-1uhipit{font-style:italic;color:var(--text-muted)}.data-explainer.svelte-1uhipit{background:var(--bg-tertiary);border-radius:10px;padding:1rem 1.25rem;font-size:.85rem;line-height:1.6;color:var(--text-secondary)}.data-explainer.svelte-1uhipit p:where(.svelte-1uhipit){margin-bottom:.75rem}.data-explainer.svelte-1uhipit p:where(.svelte-1uhipit):last-child{margin-bottom:0}.data-action.svelte-1uhipit{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem;background:var(--bg-tertiary);border-radius:10px;margin-bottom:.75rem}.data-action.svelte-1uhipit:last-of-type{margin-bottom:0}.data-action.danger.svelte-1uhipit{border:1px solid rgba(239,68,68,.3)}.data-action-info.svelte-1uhipit{display:flex;flex-direction:column;gap:.25rem}.data-action-title.svelte-1uhipit{font-size:.9rem;font-weight:500;color:var(--text-primary)}.data-action-desc.svelte-1uhipit{font-size:.8rem;color:var(--text-muted)}.data-btn.svelte-1uhipit{display:flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border-radius:8px;border:1px solid var(--border-medium);background:var(--bg-secondary);color:var(--text-primary);font-size:.85rem;font-weight:500;transition:all var(--transition-fast);flex-shrink:0}.data-btn.svelte-1uhipit svg:where(.svelte-1uhipit){width:16px;height:16px}.data-btn.svelte-1uhipit:hover{background:var(--bg-elevated);border-color:var(--border-medium);color:var(--text-primary)}.data-btn.export.svelte-1uhipit:hover{background:var(--accent);border-color:var(--accent);color:var(--bg-primary)}.data-btn.danger.svelte-1uhipit{border-color:#ef444480;color:#ef4444}.data-btn.danger.svelte-1uhipit:hover{background:#ef4444;border-color:#ef4444;color:#fff}.data-btn.help.svelte-1uhipit:hover{background:var(--accent);border-color:var(--accent);color:var(--bg-primary)}.import-status.svelte-1uhipit{margin-top:.75rem;padding:.75rem 1rem;border-radius:8px;font-size:.85rem;text-align:center;background:var(--accent-glow);color:var(--accent)}.import-status.error.svelte-1uhipit{background:#ef44441a;color:#ef4444}.about-header.svelte-1uhipit{display:flex;align-items:baseline;gap:.75rem;margin-bottom:.5rem}.about-title.svelte-1uhipit{font-size:1.25rem;font-weight:600;color:var(--text-primary);margin:0}.about-version.svelte-1uhipit{font-family:JetBrains Mono,monospace;font-size:.8rem;color:var(--text-muted);background:var(--bg-tertiary);padding:.2rem .5rem;border-radius:4px}.about-description.svelte-1uhipit{font-size:.9rem;color:var(--text-secondary);line-height:1.6;margin:0}.about-author.svelte-1uhipit{display:flex;flex-direction:column;gap:.25rem}.author-name.svelte-1uhipit{font-size:.95rem;font-weight:500;color:var(--text-primary)}.author-links.svelte-1uhipit{display:flex;align-items:center;gap:.5rem}.author-link.svelte-1uhipit{font-size:.85rem;color:var(--accent);text-decoration:none}.author-link.svelte-1uhipit:hover{text-decoration:underline}.author-separator.svelte-1uhipit{color:var(--text-muted)}.about-links.svelte-1uhipit{display:flex;flex-direction:column;gap:.5rem}.about-link.svelte-1uhipit{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--text-secondary);text-decoration:none;padding:.5rem 0;transition:color var(--transition-fast)}.about-link.svelte-1uhipit:hover{color:var(--accent)}.about-link.svelte-1uhipit svg:where(.svelte-1uhipit){width:18px;height:18px}.about-license.svelte-1uhipit{font-size:.85rem;color:var(--text-muted);margin:0}.modal-overlay.svelte-1jd9mi2{position:fixed;inset:0;background:#000c;backdrop-filter:blur(8px);z-index:1000;display:flex;align-items:flex-start;justify-content:center;padding:2rem;padding-top:5vh;opacity:0;visibility:hidden;transition:all var(--transition-normal);overflow-y:auto}.modal-overlay.active.svelte-1jd9mi2{opacity:1;visibility:visible}.import-help-modal.svelte-1jd9mi2{background:var(--bg-secondary);border-radius:20px;max-width:700px;width:100%;max-height:calc(90vh - 4rem);overflow:hidden;border:1px solid var(--border-medium);display:flex;flex-direction:column;flex-shrink:0}.modal-fixed-header.svelte-1jd9mi2{flex-shrink:0;background:var(--bg-secondary);border-bottom:1px solid var(--border-subtle)}.modal-header.svelte-1jd9mi2{padding:1.5rem 2rem 1rem;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}.modal-title.svelte-1jd9mi2{font-size:1.4rem;font-weight:600;color:var(--text-primary)}.modal-subtitle.svelte-1jd9mi2{font-size:.9rem;color:var(--text-muted);margin-top:.25rem}.modal-close.svelte-1jd9mi2{width:36px;height:36px;border-radius:50%;border:1px solid var(--border-medium);background:transparent;color:var(--text-muted);font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all var(--transition-fast);flex-shrink:0}.modal-close.svelte-1jd9mi2:hover{background:var(--bg-tertiary);color:var(--text-primary)}.help-tabs.svelte-1jd9mi2{display:flex;gap:.25rem;padding:0 2rem 1rem;overflow-x:auto}.help-tab.svelte-1jd9mi2{padding:.5rem 1rem;font-size:.85rem;font-weight:500;border:none;background:transparent;color:var(--text-muted);border-radius:8px;transition:all var(--transition-fast);white-space:nowrap}.help-tab.svelte-1jd9mi2:hover{background:var(--bg-tertiary);color:var(--text-secondary)}.help-tab.active.svelte-1jd9mi2{background:var(--accent);color:var(--bg-primary)}.modal-body.svelte-1jd9mi2{padding:1.5rem 2rem 2rem;overflow-y:auto;flex:1}.help-section.svelte-1jd9mi2{display:flex;flex-direction:column;gap:1.5rem}.file-type-badge.svelte-1jd9mi2{display:inline-flex;align-items:center;padding:.4rem .8rem;background:var(--accent-glow);color:var(--accent);border-radius:6px;font-family:JetBrains Mono,monospace;font-size:.85rem;font-weight:600;width:fit-content}.file-type-badge.small.svelte-1jd9mi2{padding:.25rem .5rem;font-size:.75rem}.help-intro.svelte-1jd9mi2{font-size:.95rem;color:var(--text-secondary);line-height:1.6;margin:0}.app-guide.svelte-1jd9mi2{background:var(--bg-tertiary);border-radius:12px;padding:1.25rem;border:1px solid var(--border-subtle)}.app-name.svelte-1jd9mi2{display:flex;align-items:center;gap:.5rem;font-size:1rem;font-weight:600;color:var(--text-primary);margin:0 0 1rem}.app-logo.svelte-1jd9mi2{width:24px;height:24px;flex-shrink:0;color:var(--text-primary)}.app-logo.svelte-1jd9mi2 svg:where(.svelte-1jd9mi2){width:100%;height:100%}.app-logo.outlook-color.svelte-1jd9mi2{color:#0078d4}.app-logo.zwift-color.svelte-1jd9mi2{color:#fc6719}.app-logo.trainerroad-color.svelte-1jd9mi2{color:#e12726}.app-logo.rouvy-color.svelte-1jd9mi2{color:#00a8e8}.step-list.svelte-1jd9mi2{margin:0;padding-left:1.5rem;color:var(--text-secondary);font-size:.9rem;line-height:1.8}.step-list.svelte-1jd9mi2 li:where(.svelte-1jd9mi2){margin-bottom:.5rem}.step-list.svelte-1jd9mi2 li:where(.svelte-1jd9mi2):last-child{margin-bottom:0}.step-list.svelte-1jd9mi2 strong:where(.svelte-1jd9mi2){color:var(--text-primary)}.step-list.svelte-1jd9mi2 a:where(.svelte-1jd9mi2){color:var(--accent);text-decoration:none}.step-list.svelte-1jd9mi2 a:where(.svelte-1jd9mi2):hover{text-decoration:underline}.path.svelte-1jd9mi2{background:var(--bg-primary);padding:.2rem .5rem;border-radius:4px;font-family:JetBrains Mono,monospace;font-size:.8rem;color:var(--accent);display:inline-block;margin:.25rem 0;word-break:break-all}.tip.svelte-1jd9mi2{margin-top:1rem;padding:.75rem 1rem;background:var(--accent-glow);border-radius:8px;font-size:.85rem;color:var(--text-secondary);border-left:3px solid var(--accent)}.tip.svelte-1jd9mi2 strong:where(.svelte-1jd9mi2){color:var(--accent)}.note.svelte-1jd9mi2{color:var(--text-muted);font-size:.9rem;margin-bottom:.5rem}.warning-box.svelte-1jd9mi2{margin-top:1rem;padding:.75rem 1rem;background:#f973161a;border-radius:8px;font-size:.85rem;color:var(--text-secondary);border-left:3px solid #f97316}.warning-box.svelte-1jd9mi2 strong:where(.svelte-1jd9mi2){color:#f97316}.file-format-guide.svelte-1jd9mi2{background:var(--bg-tertiary);border-radius:12px;padding:1.25rem;border:1px solid var(--border-subtle)}.format-title.svelte-1jd9mi2{display:flex;align-items:center;gap:.75rem;font-size:.95rem;font-weight:600;color:var(--text-primary);margin:0 0 .75rem}.file-format-guide.svelte-1jd9mi2 p:where(.svelte-1jd9mi2){color:var(--text-secondary);font-size:.9rem;line-height:1.6;margin:0 0 .75rem}.compatible-apps.svelte-1jd9mi2{display:flex;flex-wrap:wrap;gap:.5rem}.app-tag.svelte-1jd9mi2{padding:.3rem .6rem;background:var(--bg-primary);border:1px solid var(--border-subtle);border-radius:4px;font-size:.75rem;color:var(--text-muted)}.general-tips.svelte-1jd9mi2{background:var(--bg-tertiary);border-radius:12px;padding:1.25rem;border:1px solid var(--border-subtle)}.general-tips.svelte-1jd9mi2 h4:where(.svelte-1jd9mi2){font-size:.95rem;font-weight:600;color:var(--text-primary);margin:0 0 .75rem}.general-tips.svelte-1jd9mi2 ul:where(.svelte-1jd9mi2){margin:0;padding-left:1.5rem;color:var(--text-secondary);font-size:.9rem;line-height:1.8}.general-tips.svelte-1jd9mi2 li:where(.svelte-1jd9mi2){margin-bottom:.25rem}@media(max-width:600px){.modal-overlay.svelte-1jd9mi2{padding:1rem;padding-top:2vh}.import-help-modal.svelte-1jd9mi2{max-height:calc(96vh - 2rem)}.modal-header.svelte-1jd9mi2{padding:1rem 1.25rem .75rem}.modal-title.svelte-1jd9mi2{font-size:1.2rem}.help-tabs.svelte-1jd9mi2{padding:0 1.25rem .75rem}.help-tab.svelte-1jd9mi2{padding:.4rem .75rem;font-size:.8rem}.modal-body.svelte-1jd9mi2{padding:1rem 1.25rem 1.5rem}.app-guide.svelte-1jd9mi2{padding:1rem}.path.svelte-1jd9mi2{font-size:.7rem}}.local-storage-banner.svelte-5d96j5{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg-secondary);border-bottom:1px solid var(--border-medium);padding:.75rem 1rem;animation:svelte-5d96j5-slideDown .3s ease-out}@keyframes svelte-5d96j5-slideDown{0%{transform:translateY(-100%)}to{transform:translateY(0)}}.banner-content.svelte-5d96j5{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:.75rem}.banner-icon.svelte-5d96j5{flex-shrink:0;width:20px;height:20px;color:var(--accent)}.banner-icon.svelte-5d96j5 svg:where(.svelte-5d96j5){width:100%;height:100%}.banner-content.svelte-5d96j5 p:where(.svelte-5d96j5){flex:1;font-size:.9rem;color:var(--text-secondary);margin:0}.banner-link.svelte-5d96j5{background:none;border:none;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;padding:0}.banner-link.svelte-5d96j5:hover{color:var(--text-primary)}.banner-close.svelte-5d96j5{flex-shrink:0;width:28px;height:28px;border-radius:6px;border:1px solid var(--border-medium);background:transparent;color:var(--text-muted);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--transition-fast)}.banner-close.svelte-5d96j5:hover{background:var(--bg-tertiary);color:var(--text-primary)}.banner-close.svelte-5d96j5 svg:where(.svelte-5d96j5){width:14px;height:14px}.main-content.svelte-5d96j5{flex:1;margin-left:var(--sidebar-width);padding:2rem}.mobile-header.svelte-5d96j5{display:none;align-items:center;gap:1rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border-subtle)}.menu-toggle.svelte-5d96j5{width:40px;height:40px;border-radius:10px;background:var(--bg-secondary);border:1px solid var(--border-medium);color:var(--text-primary);font-size:1.2rem}.mobile-title.svelte-5d96j5{font-size:1.1rem;font-weight:600}@media(max-width:700px){.main-content.svelte-5d96j5{margin-left:0;padding:1rem}.mobile-header.svelte-5d96j5{display:flex}}</style>
   </head>
   <body>
+    <!-- FIX-THE-FADE FOCUS PANEL (injected) -->
+<style id="ff-style">
+#ff-fab,#ff-overlay,#ff-card,#ff-card *{box-sizing:border-box;font-family:Outfit,-apple-system,sans-serif}
+#ff-fab{position:fixed;left:18px;bottom:18px;z-index:99997;display:flex;align-items:center;gap:.5rem;
+ padding:.62rem .95rem;border:none;border-radius:999px;cursor:pointer;color:#fff;font-weight:700;font-size:.86rem;
+ letter-spacing:.02em;background:linear-gradient(135deg,#c2410c,#f97316);box-shadow:0 6px 24px rgba(249,115,22,.42);
+ transition:transform .15s ease,box-shadow .15s ease}
+#ff-fab:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(249,115,22,.55)}
+#ff-fab .ff-dot{width:9px;height:9px;border-radius:50%;background:#fde68a;box-shadow:0 0 0 0 rgba(253,230,138,.7);animation:ffpulse 2s infinite}
+@keyframes ffpulse{0%{box-shadow:0 0 0 0 rgba(253,230,138,.6)}70%{box-shadow:0 0 0 8px rgba(253,230,138,0)}100%{box-shadow:0 0 0 0 rgba(253,230,138,0)}}
+#ff-overlay{position:fixed;inset:0;z-index:99998;display:none;align-items:flex-start;justify-content:center;
+ background:rgba(5,5,7,.72);backdrop-filter:blur(4px);padding:max(4vh,18px) 16px;overflow-y:auto}
+#ff-overlay.ff-open{display:flex}
+#ff-card{position:relative;width:100%;max-width:580px;background:#161618;border:1px solid rgba(255,255,255,.1);
+ border-radius:18px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.6);animation:ffin .22s ease}
+@keyframes ffin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+#ff-card .ff-top{padding:1.25rem 1.4rem 1.1rem;background:linear-gradient(135deg,rgba(249,115,22,.16),rgba(234,179,8,.06));
+ border-bottom:1px solid rgba(255,255,255,.07)}
+#ff-card .ff-kicker{display:flex;align-items:center;gap:.5rem;color:#f97316;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+#ff-card h2{margin:.35rem 0 .25rem;color:#fafafa;font-size:1.5rem;font-weight:800;letter-spacing:-.01em}
+#ff-card .ff-sub{color:#a1a1aa;font-size:.9rem;line-height:1.45;margin:0}
+#ff-close{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:8px;border:1px solid rgba(255,255,255,.12);
+ background:rgba(255,255,255,.05);color:#a1a1aa;font-size:1.05rem;line-height:1;cursor:pointer}
+#ff-close:hover{color:#fff;background:rgba(255,255,255,.12)}
+#ff-card .ff-body{padding:1.1rem 1.4rem 1.4rem}
+#ff-rule{margin:.2rem 0 1.15rem;padding:1rem 1.05rem;border-radius:12px;background:rgba(234,179,8,.08);
+ border:1px solid rgba(234,179,8,.28)}
+#ff-rule .ff-rl{color:#eab308;font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+#ff-rule p{margin:.35rem 0 0;color:#fafafa;font-size:1.12rem;font-weight:700;line-height:1.35}
+#ff-rule small{display:block;margin-top:.4rem;color:#a1a1aa;font-weight:500;font-size:.82rem}
+.ff-sec-h{color:#71717a;font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin:1.1rem 0 .55rem}
+.ff-tracks{display:flex;gap:.7rem;flex-wrap:wrap}
+.ff-track{flex:1 1 220px;padding:.8rem .9rem;border-radius:11px;background:#1c1c1f;border:1px solid rgba(255,255,255,.07);border-left:3px solid #f97316}
+.ff-track.ff-exec{border-left-color:#06b6d4}
+.ff-track .ff-tt{font-weight:800;font-size:.8rem;color:#fafafa;margin-bottom:.3rem}
+.ff-track p{margin:0;color:#a1a1aa;font-size:.83rem;line-height:1.5}
+.ff-ev{display:flex;flex-direction:column;gap:.4rem}
+.ff-ev div{display:flex;gap:.55rem;align-items:flex-start;color:#a1a1aa;font-size:.83rem;line-height:1.45}
+.ff-ev .ff-x{color:#f97316;font-weight:800;flex:none}
+#ff-target{margin-top:1.1rem;padding:.85rem 1rem;border-radius:11px;background:rgba(234,179,8,.07);border:1px dashed rgba(234,179,8,.35);
+ color:#fde68a;font-size:.86rem;font-weight:600;line-height:1.45}
+.ff-checks{list-style:none;margin:.3rem 0 0;padding:0;display:flex;flex-direction:column;gap:.45rem}
+.ff-checks li{display:flex;gap:.55rem;align-items:center;color:#d4d4d8;font-size:.86rem;cursor:pointer;user-select:none}
+.ff-checks .ff-box{width:18px;height:18px;border-radius:5px;border:2px solid #52525b;flex:none;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:#0a0a0b;font-weight:900}
+.ff-checks li.ff-done .ff-box{background:#22c55e;border-color:#22c55e}
+.ff-checks li.ff-done{color:#fff}
+#ff-card .ff-foot{padding:.7rem 1.4rem 1rem;color:#52525b;font-size:.72rem;border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:520px){#ff-card h2{font-size:1.3rem}#ff-rule p{font-size:1.02rem}#ff-fab span.ff-lbl{display:none}}
+</style>
+<button id="ff-fab" onclick="ffOpen()"><span class="ff-dot"></span><span class="ff-lbl">Fix the Fade</span></button>
+<div id="ff-overlay" onclick="if(event.target===this)ffClose()">
+  <div id="ff-card" role="dialog" aria-label="Block focus: Fix the Fade">
+    <button id="ff-close" onclick="ffClose()" aria-label="Close">&times;</button>
+    <div class="ff-top">
+      <div class="ff-kicker"><span>&#127919;</span> Block Focus &middot; #1 Weakness</div>
+      <h2>Fix the Fade</h2>
+      <p class="ff-sub">Speed-rich, endurance-limited &mdash; you can hit any pace, you just can&rsquo;t hold it yet. It shows up as the same chronic positive split every time.</p>
+    </div>
+    <div class="ff-body">
+      <div id="ff-rule">
+        <span class="ff-rl">The one rule &mdash; every session, every race</span>
+        <p>The first rep &mdash; and the first 3&nbsp;km of every race &mdash; MUST feel too easy.</p>
+        <small>Your speed reserve makes goal pace feel like jogging early. That feeling is the trap. If it feels good early, you&rsquo;re already losing.</small>
+      </div>
+
+      <div class="ff-sec-h">The evidence &mdash; 3 strikes, one fingerprint</div>
+      <div class="ff-ev">
+        <div><span class="ff-x">1</span><span><b>Olomouc &frac12;</b> &mdash; went out ~4:40, detonated to 2:03 (walked, near-faint).</span></div>
+        <div><span class="ff-x">2</span><span><b>W2 fartlek</b> &mdash; surges crept up, recoveries never recovered.</span></div>
+        <div><span class="ff-x">3</span><span><b>30-min test</b> &mdash; km1 at 4:14 &rarr; faded to 5:40; power 501W &rarr; 375W (&minus;25%).</span></div>
+      </div>
+
+      <div class="ff-sec-h">How this block fixes it</div>
+      <div class="ff-tracks">
+        <div class="ff-track">
+          <div class="ff-tt">&#128293; Engine &mdash; build the hold</div>
+          <p>Threshold reps lengthen: 1000m &rarr; 1600m &rarr; continuous tempo &rarr; 14&nbsp;km @ goal pace. Threshold pace 5:00 &rarr; 4:48. Stack easy aerobic km + the Lipno bike block.</p>
+        </div>
+        <div class="ff-track ff-exec">
+          <div class="ff-tt">&#127919; Execution &mdash; train the brake</div>
+          <p>Every quality run is a pacing rehearsal: even/negative split, pace-alarm on rep&nbsp;1, deliberately hold back. The skill is restraint, not effort.</p>
+        </div>
+      </div>
+
+      <div id="ff-target">&#127942; The proof &mdash; <b>&Uacute;st&iacute;:</b> even or negative split. Last 5&nbsp;km your fastest. The exact opposite of Olomouc.</div>
+
+      <div class="ff-sec-h">Every session, ask yourself</div>
+      <ul class="ff-checks">
+        <li onclick="this.classList.toggle('ff-done')"><span class="ff-box">&#10003;</span>Did rep&nbsp;1 / the first 3&nbsp;km feel too easy?</li>
+        <li onclick="this.classList.toggle('ff-done')"><span class="ff-box">&#10003;</span>Is my last rep at least as fast as my first?</li>
+        <li onclick="this.classList.toggle('ff-done')"><span class="ff-box">&#10003;</span>Am I running by pace/HR &mdash; not by feel?</li>
+      </ul>
+    </div>
+    <div class="ff-foot">Block focus &middot; threshold 5:00&rarr;4:48 &middot; gate: Birell 10k (5 Sep) &middot; updated 30 Jun 2026</div>
+  </div>
+</div>
+<script>
+function ffOpen(){document.getElementById('ff-overlay').classList.add('ff-open')}
+function ffClose(){document.getElementById('ff-overlay').classList.remove('ff-open')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')ffClose()});
+window.addEventListener('load',function(){setTimeout(ffOpen,650)});
+</script>
+<!-- /FIX-THE-FADE -->
+
     <div id="app"></div>
     <!-- Plan Data (will be replaced by CLI) -->
     <script type="application/json" id="plan-data">
 {
-  "version": "1.0",
+  "version": "1.2",
   "meta": {
     "id": "usti-half-2026-09-19",
     "athlete": "Sebastian Rod",
@@ -74,7 +178,7 @@ ${a.join(`
     "planStartDate": "2026-06-15",
     "planEndDate": "2026-09-20",
     "createdAt": "2026-06-14T00:00:00Z",
-    "updatedAt": "2026-06-15T12:00:00Z",
+    "updatedAt": "2026-06-30T19:30:00Z",
     "totalWeeks": 14,
     "generatedBy": "Claude Coach",
     "goal": {
@@ -82,7 +186,8 @@ ${a.join(`
       "reach": "1:40:00 (4:44/km) — gated by Birell 10k",
       "pb": "1:53:22 (Karlovy Vary, 16 May 2026)"
     },
-    "weeklySkeleton": "Mon easy-recovery · Tue rest · Wed Quality 1 · Thu gym · Fri Quality 2 (build wks) · Sat rest · Sun long. No quality/test follows the long run; gym is its own day."
+    "weeklySkeleton": "Mon easy-recovery · Tue rest · Wed Quality 1 · Thu gym · Fri Quality 2 (build wks) · Sat rest · Sun long. No quality/test follows the long run; gym is its own day.",
+    "revision": "v1.2 (30 Jun): W3 upgraded to 4 runs + gym (added easy run in the Fri–Sun window); test result embedded; Lipno (W4) set to short ride (Wed) + long ride (Thu) + rest (Fri)."
   },
   "preferences": {
     "run": "kilometers",
@@ -111,36 +216,37 @@ ${a.join(`
     },
     "strengths": [
       {
-        "area": "aerobic endurance",
-        "evidence": "Marathon + regular 21–26k long runs"
+        "area": "top-end speed / VO2",
+        "evidence": "4:14/km on test km1 felt easy; floorball-built neuromuscular power & repeated-sprint capacity"
+      },
+      {
+        "area": "aerobic base & recovery",
+        "evidence": "Sleeping HR floor 35 bpm; clean Z2 long runs; consistent since March"
       },
       {
         "area": "easy/hard discipline",
-        "evidence": "Easy ~6:45 vs race 5:21"
-      },
-      {
-        "area": "consistency",
-        "evidence": "Steady training since March"
+        "evidence": "Easy runs genuinely easy by HR (125–135)"
       }
     ],
     "limiters": [
       {
-        "area": "threshold speed",
-        "evidence": "Races HM at 5:21; goal needs 4:44–4:50"
+        "area": "threshold / fatigue-resistance",
+        "evidence": "\"Fast for a minute, can't hold it.\" Threshold pace ~5:00/km. Endurance-limited — the trainable lever for HM."
       },
       {
-        "area": "race execution",
-        "evidence": "Olomouc positive-split detonation"
+        "area": "race pacing execution",
+        "evidence": "Chronic positive split: Olomouc 2:03 blow-up; field-test km1 4:14 → faded to 5:40. #1 race limiter, not fitness."
       },
       {
-        "area": "no dedicated speed block yet",
-        "evidence": "Tempo work has been moderate — untapped upside"
+        "area": "over-doing prescriptions",
+        "evidence": "Tends to add load (fartlek 10 reps not 6; full 14k in heat). Recovers well, but watch in build."
       }
     ],
     "constraints": [
       "3 runs/week default, 4 in build weeks",
       "1 gym (full-body) /week",
-      "Thailand 28 Jul–9 Aug",
+      "Lipno cycling trip 8–10 Jul (W4)",
+      "Thailand 28 Jul–9 Aug (W7–8)",
       "Birell 10k 5 Sep",
       "87kg — metabolic-cost factor at goal pace"
     ]
@@ -148,55 +254,77 @@ ${a.join(`
   "zones": {
     "run": {
       "hr": {
-        "lthr": 177,
-        "max": 178,
-        "method": "%HRR",
+        "lthr": 171,
+        "max": 185,
+        "method": "%LTHR",
         "zones": [
           {
             "zone": 1,
             "name": "Recovery",
+            "percentLow": 0,
+            "percentHigh": 70,
             "hrLow": 0,
             "hrHigh": 120,
-            "pace": "7:15–7:45/km"
+            "pace": ">6:45/km"
           },
           {
             "zone": 2,
             "name": "Aerobic",
+            "percentLow": 71,
+            "percentHigh": 83,
             "hrLow": 121,
             "hrHigh": 142,
-            "pace": "6:30–7:00/km"
+            "pace": "6:00–6:45/km"
           },
           {
             "zone": 3,
-            "name": "Tempo/Marathon",
+            "name": "Tempo",
+            "percentLow": 84,
+            "percentHigh": 94,
             "hrLow": 143,
-            "hrHigh": 163,
-            "pace": "5:20–6:00/km"
+            "hrHigh": 161,
+            "pace": "5:10–5:50/km"
           },
           {
             "zone": 4,
             "name": "Threshold",
-            "hrLow": 164,
-            "hrHigh": 184,
-            "pace": "4:30–5:20/km"
+            "percentLow": 95,
+            "percentHigh": 102,
+            "hrLow": 162,
+            "hrHigh": 174,
+            "pace": "4:45–5:10/km"
           },
           {
             "zone": 5,
             "name": "VO2/Anaerobic",
-            "hrLow": 185,
+            "percentLow": 102,
+            "percentHigh": 999,
+            "hrLow": 175,
             "hrHigh": 210,
-            "pace": "< 4:30/km"
+            "pace": "<4:45/km"
           }
-        ]
+        ],
+        "maxNote": "Estimated/untested — test peaked 176 bpm while fading. Zones use %LTHR, not %max.",
+        "measuredFrom": "30-min field test 30 Jun 2026 — final-20-min avg HR 172 (28°C/62%RH, anchored 171)"
       }
     },
     "pace": {
-      "easy": "6:30–7:00",
-      "steady_MP": "5:20–5:40",
-      "goalPace": "4:50 (reach 4:44)",
-      "threshold": "4:48–5:00",
-      "vo2": "4:10–4:20",
-      "note": "Validated by 30-min field test in Week 3 — will refine after."
+      "recovery": ">6:45",
+      "easy": "6:00–6:45",
+      "steady": "5:10–5:30",
+      "threshold": "5:00 now → 4:48 target by race",
+      "goalPace": "4:50 (stretch 4:44)",
+      "vo2": "4:15–4:30",
+      "anaerobic": "<4:15",
+      "stravaZones": {
+        "Z1_recovery": ">6:45",
+        "Z2_easy": "6:45–5:50",
+        "Z3_tempo": "5:50–5:10",
+        "Z4_threshold": "5:10–4:45",
+        "Z5_vo2": "4:45–4:15",
+        "Z6_anaerobic": "<4:15"
+      },
+      "note": "Locked from 30-min field test 30 Jun 2026: 5:05/km avg full-test, ~5:00/km cool-corrected (28°C/62%RH heat tax). LTHR measured 172, anchored 171. HEAT-PROVISIONAL — confirm/refine at Birell 10k (5 Sep) in cool air. In heat, govern by HR/feel; pace zones do not self-adjust."
     }
   },
   "phases": [
@@ -573,10 +701,10 @@ ${a.join(`
       "startDate": "2026-06-29",
       "endDate": "2026-07-05",
       "phase": "Base + Threshold",
-      "focus": "FIELD TEST on fresh legs — set true threshold",
-      "targetKm": 30,
+      "focus": "Field test + consolidate aerobically (4 runs this week — added easy volume on your limiter)",
+      "targetKm": 37,
       "isRecoveryWeek": false,
-      "runsPlanned": 3,
+      "runsPlanned": 4,
       "days": [
         {
           "date": "2026-06-29",
@@ -587,11 +715,11 @@ ${a.join(`
               "sport": "run",
               "type": "recovery",
               "name": "Recovery 5k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs. Short and gentle — you test Wednesday, so prime, don't fatigue.",
-              "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 37,
-              "distanceMeters": 5000
+              "completed": true,
+              "primaryZone": "Z1 (≤120)",
+              "durationMinutes": 36,
+              "distanceMeters": 5000,
+              "description": "Short pre-test flush. Done."
             }
           ]
         },
@@ -600,12 +728,16 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w3-tue-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "w3-tue-test",
+              "sport": "run",
+              "type": "test",
+              "name": "30-min Threshold Test",
+              "completed": true,
+              "primaryZone": "Z4/Z5",
+              "durationMinutes": 50,
+              "distanceMeters": 9500,
+              "description": "DONE. Result: 5.911k in 30:00 = 5:05/km avg in 28°C/62%RH (heat-suppressed → ~5:00 cool). LTHR (final-20-min avg) 172 → zones anchored to 171. Positive split (km1 4:14 → faded 5:40) — pacing is the fix.",
+              "humanReadable": "COMPLETED 30 Jun. Threshold pace ~5:00/km cool · LTHR 171 · zones locked."
             }
           ]
         },
@@ -614,16 +746,12 @@ ${a.join(`
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w3-wed",
-              "sport": "run",
-              "type": "test",
-              "name": "30-min Threshold Test",
-              "description": "Fresh legs (Mon easy + Tue rest behind you). Locks your real LTHR + threshold pace so every pace in the plan is exact.",
+              "id": "w3-wed-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
               "completed": false,
-              "primaryZone": "Z4/Z5a",
-              "durationMinutes": 60,
-              "distanceMeters": 9500,
-              "humanReadable": "WU 15min easy + 4×100m strides\nMAIN: 30min time trial — hardest steady pace you can hold (run it like a race)\nRecord: avg HR final 20min = LTHR; avg pace = threshold pace\nCD 10min easy\nSend me the two numbers — I'll fine-tune all paces."
+              "description": "Full rest — recover from the max test. Sleep, eat, hydrate."
             }
           ]
         },
@@ -632,13 +760,13 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w3-thu",
+              "id": "w3-thu-gym",
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
               "completed": false,
-              "durationMinutes": 50
+              "durationMinutes": 50,
+              "description": "Full-body 45–55min, your dialled-in order: RDL → split squat (6–8/leg, heavy) → calf → chest → pull-ups → lateral raise → abductors → Pallof. 1–2 RIR on the leg compounds."
             }
           ]
         },
@@ -647,12 +775,15 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w3-fri-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "w3-fri",
+              "sport": "run",
+              "type": "easy",
+              "name": "Easy 8k",
+              "completed": false,
+              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
+              "durationMinutes": 54,
+              "distanceMeters": 8000,
+              "description": "The added 4th run — pure easy aerobic volume (your highest-leverage adaptation). Conversational the whole way. NOT a quality day."
             }
           ]
         },
@@ -665,8 +796,8 @@ ${a.join(`
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest before the long run. Optional 5k shakeout only if you feel great."
             }
           ]
         },
@@ -679,12 +810,12 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 15k",
-              "description": "Last 3k progress to steady (Z3 ~5:30). Fuel rehearsal again.",
               "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 102,
+              "primaryZone": "Z2 base + Z3 finish",
+              "durationMinutes": 100,
               "distanceMeters": 15000,
-              "humanReadable": "0–12k @ 6:45/km\n12–15k @ ~5:30/km\nGel @ 45min"
+              "description": "Easy with a controlled Z3 finish — practise holding form/pace as fatigue builds (your limiter).",
+              "humanReadable": "0–12k @ 6:30–6:45/km (Z2)\n12–15k @ ~5:25–5:30/km (Z3, controlled even effort)\nGel @ 45min"
             }
           ]
         }
@@ -692,17 +823,18 @@ ${a.join(`
       "summary": {
         "totalKm": 29.5,
         "runs": 3
-      }
+      },
+      "notes": "You asked for 4 runs + gym; Mon recovery + Tue test already done. The 4th run is an EASY aerobic run on Friday (your free window) — channels the extra time into aerobic volume, not extra intensity. Wed rest after the max test; gym Thu; long run Sun. Keep Friday genuinely easy — if anything feels off after the test, skip it."
     },
     {
       "weekNumber": 4,
       "startDate": "2026-07-06",
       "endDate": "2026-07-12",
       "phase": "Base + Threshold",
-      "focus": "Threshold development (4-run build)",
-      "targetKm": 43,
+      "focus": "Threshold + Lipno cycling block (low-impact aerobic volume = direct hit on your limiter)",
+      "targetKm": 32,
       "isRecoveryWeek": false,
-      "runsPlanned": 4,
+      "runsPlanned": 3,
       "days": [
         {
           "date": "2026-07-06",
@@ -711,13 +843,13 @@ ${a.join(`
             {
               "id": "w4-mon",
               "sport": "run",
-              "type": "recovery",
-              "name": "Recovery 8k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
+              "type": "easy",
+              "name": "Easy 6k",
               "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 59,
-              "distanceMeters": 8000
+              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
+              "durationMinutes": 42,
+              "distanceMeters": 6000,
+              "description": "Relaxed pre-trip shakeout. Keep it genuinely easy."
             }
           ]
         },
@@ -726,12 +858,16 @@ ${a.join(`
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w4-tue-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "w4-tue",
+              "sport": "run",
+              "type": "threshold",
+              "name": "Cruise Intervals 5×1000m",
+              "completed": false,
+              "primaryZone": "Z4 threshold (162–174 / ~5:00)",
+              "durationMinutes": 58,
+              "distanceMeters": 10000,
+              "description": "Key run quality, done fresh before you travel. Paces off your test.",
+              "humanReadable": "WU 15min easy + 4×100m strides\n5 × 1000m @ 5:00/km, 90s jog (HR settle into 162–174)\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -740,16 +876,16 @@ ${a.join(`
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w4-wed",
-              "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 5×1000m",
-              "description": "Threshold engine-builder. Paces off your test; ~5:00/km, HR near LTHR.",
+              "id": "w4-wed-bike",
+              "sport": "bike",
+              "type": "endurance",
+              "name": "Lipno Ride 1 — Short & Easy",
               "completed": false,
-              "primaryZone": "Z4 threshold",
-              "durationMinutes": 58,
-              "distanceMeters": 10000,
-              "humanReadable": "WU 15min easy + 4×100m strides\n5 × 1000m @ 5:00/km, 90s jog\nCD 10min easy"
+              "primaryZone": "Bike Z2 (HR ~115–135, conversational)",
+              "durationMinutes": 50,
+              "distanceMeters": 18000,
+              "description": "Travel/arrival day — just a short easy spin to open the legs. The lakeside cycle path is perfect.",
+              "humanReadable": "45–60min easy. Conversational. Nothing hard."
             }
           ]
         },
@@ -758,13 +894,16 @@ ${a.join(`
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w4-wed-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "id": "w4-thu-bike",
+              "sport": "bike",
+              "type": "endurance",
+              "name": "Lipno Ride 2 — Long Endurance",
               "completed": false,
-              "durationMinutes": 50
+              "primaryZone": "Bike Z2 w/ optional Z3 efforts",
+              "durationMinutes": 180,
+              "distanceMeters": 65000,
+              "description": "Full day free = your big aerobic session of the week, and zero impact — a direct, joint-friendly hit on your endurance limiter. Mostly easy; add tempo only if you feel good.",
+              "humanReadable": "2.5–4h endurance, mostly easy (HR ~115–135).\nOptional mid-ride: 3–4 × 8–10min tempo on climbs (HR ~145–158, comfortably hard), full recovery between.\nFuel ~60g carbs/hr + drink steadily — it's long and warm. Pace it: don't smash the first hour."
             }
           ]
         },
@@ -773,16 +912,12 @@ ${a.join(`
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w4-fri",
-              "sport": "run",
-              "type": "tempo",
-              "name": "Tempo 20min",
-              "description": "Continuous sub-threshold. Comfortably hard, controlled.",
+              "id": "w4-fri-r",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
               "completed": false,
-              "primaryZone": "Z4",
-              "durationMinutes": 50,
-              "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\n20min continuous @ ~5:05/km\nCD 2k easy"
+              "description": "No training — enjoy the trip. Travel/relax. Legs recover from the big ride before Sunday's long run."
             }
           ]
         },
@@ -795,8 +930,8 @@ ${a.join(`
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Full rest + travel back. Sleep, eat, hydrate. Adaptation happens here."
             }
           ]
         },
@@ -809,12 +944,12 @@ ${a.join(`
               "sport": "run",
               "type": "long",
               "name": "Long Run 16k",
-              "description": "Last 5k @ steady (Z3 ~5:30). Fuel every 45min.",
               "completed": false,
-              "primaryZone": "Z2 base",
+              "primaryZone": "Z2 base + Z3 finish",
               "durationMinutes": 108,
               "distanceMeters": 16000,
-              "humanReadable": "0–11k @ 6:45/km\n11–16k @ ~5:30/km"
+              "description": "Legs should feel fresh after non-impact riding. Hold form on the finish — that's your limiter.",
+              "humanReadable": "0–11k @ 6:30–6:45/km (Z2)\n11–16k @ ~5:25/km (Z3, controlled)\nGel @ 45min. If warm, run by HR."
             }
           ]
         }
@@ -822,7 +957,9 @@ ${a.join(`
       "summary": {
         "totalKm": 43.0,
         "runs": 4
-      }
+      },
+      "ridesPlanned": 2,
+      "notes": "Lipno trip: Wed SHORT easy ride, Thu LONG ride (full day free), Fri OFF. Threshold run before you travel (Tue), long run after (Sun). No gym this week — riding + the trip cover it; gym resumes W5. Bike HR runs ~5–10 bpm below run HR at the same effort."
     },
     {
       "weekNumber": 5,
@@ -879,7 +1016,7 @@ ${a.join(`
               "primaryZone": "Z4 threshold",
               "durationMinutes": 62,
               "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 4×100m strides\n4 × 1600m @ 5:00/km, 2min jog\nCD 10min easy"
+              "humanReadable": "WU 15min + 4×100m strides\n4 × 1600m @ 5:00/km, 2min jog\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -912,7 +1049,7 @@ ${a.join(`
               "primaryZone": "Z4",
               "durationMinutes": 50,
               "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\n2 × 12min @ ~5:00/km, 3min easy\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n2 × 12min @ ~5:00/km, 3min easy\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1009,7 +1146,7 @@ ${a.join(`
               "primaryZone": "Z4",
               "durationMinutes": 46,
               "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n3 × 1000m @ 5:00/km, 90s jog\nCD 10min"
+              "humanReadable": "WU 15min + strides\n3 × 1000m @ 5:00/km, 90s jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1375,14 +1512,14 @@ ${a.join(`
             {
               "id": "w9-wed",
               "sport": "run",
-              "type": "intervals",
-              "name": "VO2 5×1000m",
-              "description": "Top-end power back after Thailand. Hard but controlled.",
+              "type": "threshold",
+              "name": "Threshold 4×2km",
+              "description": "Swapped the VO2 day for sustained threshold — you have speed; you need time-at-threshold (fractional utilization). This is the engine for your half.",
               "completed": false,
-              "primaryZone": "Z5 VO2 (~4:20)",
-              "durationMinutes": 58,
-              "distanceMeters": 10000,
-              "humanReadable": "WU 15min + 6×100m strides\n5 × 1000m @ 4:20/km, 400m (2:30) jog\nCD 10min"
+              "primaryZone": "Z4 threshold (162–174 / ~4:58)",
+              "durationMinutes": 62,
+              "distanceMeters": 12000,
+              "humanReadable": "WU 15min easy + 4×100m strides\n4 × 2km @ ~4:58/km, 2min jog (HR mid-Z4 ~168–172)\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1415,7 +1552,7 @@ ${a.join(`
               "primaryZone": "Z4/GP",
               "durationMinutes": 55,
               "distanceMeters": 10000,
-              "humanReadable": "WU 2.5k easy\n3 × 2km @ 4:50/km, 2min jog\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n3 × 2km @ 4:50/km, 2min jog\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1447,7 +1584,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 122,
               "distanceMeters": 18000,
-              "humanReadable": "0–10k @ 6:45/km easy\n2 × 4km @ 4:50/km (GP), 1km easy float between\nGels @ 40 & 80min"
+              "humanReadable": "0–10k @ 6:45/km easy\n2 × 4km @ 4:50/km (GP), 1km easy float between\nGels @ 40 & 80min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -1512,7 +1649,7 @@ ${a.join(`
               "primaryZone": "Z5 VO2 (~4:15)",
               "durationMinutes": 62,
               "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 6×100m strides\n6 × 1000m @ 4:15/km, 400m jog\nCD 10min"
+              "humanReadable": "WU 15min + 6×100m strides\n6 × 1000m @ 4:15/km, 400m jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1545,7 +1682,7 @@ ${a.join(`
               "primaryZone": "GP",
               "durationMinutes": 60,
               "distanceMeters": 11000,
-              "humanReadable": "WU 2.5k easy\n3 × 3km @ 4:48–4:50/km, 90s jog\nCD 1.5k easy"
+              "humanReadable": "WU 2.5k easy\n3 × 3km @ 4:48–4:50/km, 90s jog\nCD 1.5k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1577,7 +1714,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 136,
               "distanceMeters": 20000,
-              "humanReadable": "0–8k @ 6:45/km\n3 × 4km @ 4:50/km (GP), 1km easy float\nFull race-day fueling + hydration"
+              "humanReadable": "0–8k @ 6:45/km\n3 × 4km @ 4:50/km (GP), 1km easy float\nFull race-day fueling + hydration | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -1642,7 +1779,7 @@ ${a.join(`
               "primaryZone": "Z5 (~4:10)",
               "durationMinutes": 52,
               "distanceMeters": 9000,
-              "humanReadable": "WU 15min + strides\n4 × 1000m @ 4:10–4:15/km, 400m jog\nCD 10min"
+              "humanReadable": "WU 15min + strides\n4 × 1000m @ 4:10–4:15/km, 400m jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1675,7 +1812,7 @@ ${a.join(`
               "primaryZone": "GP",
               "durationMinutes": 50,
               "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\n2 × 3km @ 4:50/km, 2min jog\nCD 2k easy"
+              "humanReadable": "WU 2.5k easy\n2 × 3km @ 4:50/km, 2min jog\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1707,7 +1844,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 142,
               "distanceMeters": 21000,
-              "humanReadable": "0–5k @ 6:40/km easy\n5–19k = 14km @ 4:50/km (GP), even effort, hold form\n19–21k easy\nYour dress rehearsal for 1:42."
+              "humanReadable": "0–5k @ 6:40/km easy\n5–19k = 14km @ 4:50/km (GP), even effort, hold form\n19–21k easy\nYour dress rehearsal for 1:42. | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -1772,7 +1909,7 @@ ${a.join(`
               "primaryZone": "Z5",
               "durationMinutes": 46,
               "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n5 × 800m @ 4:10/km, 400m jog\nCD 10min"
+              "humanReadable": "WU 15min + strides\n5 × 800m @ 4:10/km, 400m jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1901,7 +2038,7 @@ ${a.join(`
               "primaryZone": "Z4/GP",
               "durationMinutes": 46,
               "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n3 × 1km @ 4:45/km, 2min jog\nCD 10min"
+              "humanReadable": "WU 15min + strides\n3 × 1km @ 4:45/km, 2min jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1962,7 +2099,7 @@ ${a.join(`
               "primaryZone": "Z2 base",
               "durationMinutes": 95,
               "distanceMeters": 14000,
-              "humanReadable": "0–10k @ 6:45/km\n10–13k @ 4:50/km (GP)\n13–14k easy"
+              "humanReadable": "0–10k @ 6:45/km\n10–13k @ 4:50/km (GP)\n13–14k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -2028,7 +2165,7 @@ ${a.join(`
               "primaryZone": "GP",
               "durationMinutes": 34,
               "distanceMeters": 6000,
-              "humanReadable": "WU 2k easy\n3 × 1km @ 4:50/km, 90s jog\nCD 1k easy"
+              "humanReadable": "WU 2k easy\n3 × 1km @ 4:50/km, 90s jog\nCD 1k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -2113,8 +2250,11 @@ ${a.join(`
       "course": "Flat & fast riverside ('Ferrari of races'), afternoon start (~14:30 in recent years — confirm 2026)"
     },
     "goal": {
-      "primary": "1:42:00 @ 4:50/km",
-      "reach": "1:40:00 @ 4:44/km if Birell confirms"
+      "pb": "Current PB 1:53:22 (Karlovy Vary). Any sub-1:53 = PR.",
+      "realistic": "1:46–1:48 @ ~5:00–5:05/km — test-calibrated, high probability if the build lands.",
+      "stretch": "1:43–1:44 @ ~4:52/km — needs threshold to drop from 5:00 toward ~4:50.",
+      "dream": "1:42 @ 4:50/km — everything clicks + Birell confirms. 1:40 only if Birell is exceptional.",
+      "logic": "Measured threshold ~5:00/km cool → current HM fitness ~1:48–1:50. Block is built to pull threshold to ~4:48. Birell 10k (5 Sep) sets the race-day number."
     },
     "pacing": {
       "plan": "Even splits / slight negative — the opposite of Olomouc.",
@@ -2128,8 +2268,18 @@ ${a.join(`
         "km4–17: 4:44",
         "km18–21: 4:40"
       ],
-      "hr": "Build into Z4. ~168–172 first 5k, drift to 174–177 by 15k. If you're at 178+ before 10k, you went too hard — ease.",
-      "rule": "If quads burn before 10k, you're overcooked — back off 3–4s/km immediately."
+      "hr": "Build into Z4 off LTHR 171. ~162–166 first 5k (low Z4), drift to 170–174 by 15k. Above 175 before 10k = you went too hard, ease off. HR drifts in heat — trust pace/effort if warm.",
+      "rule": "THE race lesson: first 3k must feel too easy. Your speed reserve makes goal pace feel like jogging early — that feeling is the trap that detonated Olomouc and spiked your test km1. Hold back, finish fast.",
+      "splits_primary_1_47": [
+        "km1–3: 5:05 (deliberately controlled — it WILL feel too easy)",
+        "km4–16: 5:02 locked in",
+        "km17–21: 4:58 if the legs are there"
+      ],
+      "splits_stretch_1_43": [
+        "km1–3: 4:55",
+        "km4–17: 4:52",
+        "km18–21: 4:48 (only if Birell green-lit it)"
+      ]
     },
     "nutrition": {
       "approach": "Keep EXACTLY what worked at Prague & KV — Olomouc failed on pacing, not fuel.",
@@ -2149,6 +2299,15 @@ ${a.join(`
       "Carbon shoes (race-tested) ✅",
       "Start in the pace group near 1:40–1:45 if available, but run YOUR splits not the crowd's"
     ]
+  },
+  "monitoring": {
+    "readiness": {
+      "baseline": "Sleeping HR floor ~35 bpm (8Sleep). Note your typical waking RHR too.",
+      "check": "Each AM: resting HR vs baseline + HRV + sleep quality.",
+      "flag": "Resting HR +5–7 bpm over baseline, or clear HRV drop → make the day easy or rest.",
+      "why": "Your perceived effort is unreliable (see pacing) — use an objective recovery signal.",
+      "priority_weeks": "W9–11 build, Thailand (W7–8), taper (W13–14)."
+    }
   }
 }
 </script>
