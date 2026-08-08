@@ -69,7 +69,7 @@ ${a.join(`
  letter-spacing:.02em;background:linear-gradient(135deg,#c2410c,#f97316);box-shadow:0 6px 24px rgba(249,115,22,.42);
  transition:transform .15s ease,box-shadow .15s ease}
 #ff-fab:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(249,115,22,.55)}
-#ff-fab .ff-dot{width:9px;height:9px;border-radius:50%;background:#fde68a;box-shadow:0 0 0 0 rgba(253,230,138,.7);animation:ffpulse 2s infinite}
+#ff-fab .ff-dot{width:9px;height:9px;border-radius:50%;background:#fde68a;animation:ffpulse 2s infinite}
 @keyframes ffpulse{0%{box-shadow:0 0 0 0 rgba(253,230,138,.6)}70%{box-shadow:0 0 0 8px rgba(253,230,138,0)}100%{box-shadow:0 0 0 0 rgba(253,230,138,0)}}
 #ff-overlay{position:fixed;inset:0;z-index:99998;display:none;align-items:flex-start;justify-content:center;
  background:rgba(5,5,7,.72);backdrop-filter:blur(4px);padding:max(4vh,18px) 16px;overflow-y:auto}
@@ -86,8 +86,7 @@ ${a.join(`
  background:rgba(255,255,255,.05);color:#a1a1aa;font-size:1.05rem;line-height:1;cursor:pointer}
 #ff-close:hover{color:#fff;background:rgba(255,255,255,.12)}
 #ff-card .ff-body{padding:1.1rem 1.4rem 1.4rem}
-#ff-rule{margin:.2rem 0 1.15rem;padding:1rem 1.05rem;border-radius:12px;background:rgba(234,179,8,.08);
- border:1px solid rgba(234,179,8,.28)}
+#ff-rule{margin:.2rem 0 1.15rem;padding:1rem 1.05rem;border-radius:12px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.28)}
 #ff-rule .ff-rl{color:#eab308;font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
 #ff-rule p{margin:.35rem 0 0;color:#fafafa;font-size:1.12rem;font-weight:700;line-height:1.35}
 #ff-rule small{display:block;margin-top:.4rem;color:#a1a1aa;font-weight:500;font-size:.82rem}
@@ -125,28 +124,24 @@ ${a.join(`
         <p>The first rep &mdash; and the first 3&nbsp;km of every race &mdash; MUST feel too easy.</p>
         <small>Your speed reserve makes goal pace feel like jogging early. That feeling is the trap. If it feels good early, you&rsquo;re already losing.</small>
       </div>
-
       <div class="ff-sec-h">The evidence &mdash; 3 strikes, one fingerprint</div>
       <div class="ff-ev">
         <div><span class="ff-x">1</span><span><b>Olomouc &frac12;</b> &mdash; went out ~4:40, detonated to 2:03 (walked, near-faint).</span></div>
         <div><span class="ff-x">2</span><span><b>W2 fartlek</b> &mdash; surges crept up, recoveries never recovered.</span></div>
         <div><span class="ff-x">3</span><span><b>30-min test</b> &mdash; km1 at 4:14 &rarr; faded to 5:40; power 501W &rarr; 375W (&minus;25%).</span></div>
       </div>
-
       <div class="ff-sec-h">How this block fixes it</div>
       <div class="ff-tracks">
         <div class="ff-track">
           <div class="ff-tt">&#128293; Engine &mdash; build the hold</div>
-          <p>Threshold reps lengthen: 1000m &rarr; 1600m &rarr; continuous tempo &rarr; 14&nbsp;km @ goal pace. Threshold pace 5:00 &rarr; 4:48. Stack easy aerobic km + the Lipno bike block.</p>
+          <p>Threshold reps lengthen: 1000m &rarr; 2km &rarr; goal-pace blocks &rarr; 10&nbsp;km @ GP dress rehearsal (W11). Stack easy aerobic volume underneath.</p>
         </div>
         <div class="ff-track ff-exec">
           <div class="ff-tt">&#127919; Execution &mdash; train the brake</div>
           <p>Every quality run is a pacing rehearsal: even/negative split, pace-alarm on rep&nbsp;1, deliberately hold back. The skill is restraint, not effort.</p>
         </div>
       </div>
-
       <div id="ff-target">&#127942; The proof &mdash; <b>&Uacute;st&iacute;:</b> even or negative split. Last 5&nbsp;km your fastest. The exact opposite of Olomouc.</div>
-
       <div class="ff-sec-h">Every session, ask yourself</div>
       <ul class="ff-checks">
         <li onclick="this.classList.toggle('ff-done')"><span class="ff-box">&#10003;</span>Did rep&nbsp;1 / the first 3&nbsp;km feel too easy?</li>
@@ -154,7 +149,7 @@ ${a.join(`
         <li onclick="this.classList.toggle('ff-done')"><span class="ff-box">&#10003;</span>Am I running by pace/HR &mdash; not by feel?</li>
       </ul>
     </div>
-    <div class="ff-foot">Block focus &middot; threshold 5:00&rarr;4:48 &middot; gate: Birell 10k (5 Sep) &middot; updated 30 Jun 2026</div>
+    <div class="ff-foot">Block focus &middot; W9 re-entry &rarr; W10&ndash;11 build &middot; gate: Birell 10k (5 Sep) &middot; updated 9 Aug 2026</div>
   </div>
 </div>
 <script>
@@ -169,7 +164,7 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
     <!-- Plan Data (will be replaced by CLI) -->
     <script type="application/json" id="plan-data">
 {
-  "version": "1.2",
+  "version": "1.4",
   "meta": {
     "id": "usti-half-2026-09-19",
     "athlete": "Sebastian Rod",
@@ -178,7 +173,7 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
     "planStartDate": "2026-06-15",
     "planEndDate": "2026-09-20",
     "createdAt": "2026-06-14T00:00:00Z",
-    "updatedAt": "2026-06-30T19:30:00Z",
+    "updatedAt": "2026-08-09T18:00:00Z",
     "totalWeeks": 14,
     "generatedBy": "Claude Coach",
     "goal": {
@@ -187,7 +182,20 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "pb": "1:53:22 (Karlovy Vary, 16 May 2026)"
     },
     "weeklySkeleton": "Mon easy-recovery · Tue rest · Wed Quality 1 · Thu gym · Fri Quality 2 (build wks) · Sat rest · Sun long. No quality/test follows the long run; gym is its own day.",
-    "revision": "v1.2 (30 Jun): W3 upgraded to 4 runs + gym (added easy run in the Fri–Sun window); test result embedded; Lipno (W4) set to short ride (Wed) + long ride (Thu) + rest (Fri)."
+    "revision": "v1.4 (9 Aug 2026): Thailand block ran to 12 km over 2 weeks (0 km in W8; last run 31 Jul). Build shifted one week right. W9 rebuilt as a graded re-entry (~35 km, 4 runs, ONE conservative quality session, 13k easy long run, strides reintroduced for tissue prep). W10 takes the old W9 content, W11 the old W10 content with a compressed 20k dress rehearsal. W12–W14 (Birell, taper, race) unchanged.",
+    "blockFocus": {
+      "title": "Fix the Fade",
+      "weakness": "Speed-rich, endurance-limited. You can hit any pace; you can't yet hold it. Shows up as a chronic positive split.",
+      "evidence": [
+        "Olomouc ½ — went ~4:40, detonated to 2:03 (walked, near-faint)",
+        "W2 fartlek — surges crept up, recoveries never recovered",
+        "30-min test — km1 4:14 → faded to 5:40; power 501W → 375W (−25%)"
+      ],
+      "rule": "The first rep — and the first 3 km of every race — MUST feel too easy.",
+      "engine": "Threshold reps lengthen 1000m → 1600m → continuous tempo → 14 km @ goal pace. Threshold 5:00 → 4:48. Stack easy aerobic km + Lipno bike.",
+      "execution": "Every quality run is a pacing rehearsal: even/neg split, pace-alarm on rep 1, hold back. Train the brake.",
+      "target": "Ústí: even or negative split. Last 5 km your fastest. The opposite of Olomouc."
+    }
   },
   "preferences": {
     "run": "kilometers",
@@ -1469,8 +1477,8 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "startDate": "2026-08-10",
       "endDate": "2026-08-16",
       "phase": "Specific Build",
-      "focus": "Reintroduce sharp intensity + goal-pace (4-run)",
-      "targetKm": 46,
+      "focus": "RE-ENTRY — rebuild running frequency and tissue tolerance. Frequency yes, volume moderate, intensity minimal.",
+      "targetKm": 35,
       "isRecoveryWeek": false,
       "runsPlanned": 4,
       "days": [
@@ -1481,13 +1489,14 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
             {
               "id": "w9-mon",
               "sport": "run",
-              "type": "recovery",
-              "name": "Recovery 8k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
+              "type": "easy",
+              "name": "Easy 6k + strides",
               "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 59,
-              "distanceMeters": 8000
+              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
+              "durationMinutes": 42,
+              "distanceMeters": 6000,
+              "description": "First run back. Genuinely easy — this is a tissue re-introduction, not training.",
+              "humanReadable": "6k easy @ 6:15–6:45/km, HR 130–140\n4 × 20s relaxed strides at the end (smooth, not fast)\nIf anything feels tight, cut it to 4k. No hero day."
             }
           ]
         },
@@ -1496,12 +1505,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w9-tue-r",
+              "id": "w9-tue",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Full rest. Let the legs register yesterday before you add more."
             }
           ]
         },
@@ -1512,14 +1521,14 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
             {
               "id": "w9-wed",
               "sport": "run",
-              "type": "threshold",
-              "name": "Threshold 4×2km",
-              "description": "Swapped the VO2 day for sustained threshold — you have speed; you need time-at-threshold (fractional utilization). This is the engine for your half.",
+              "type": "easy",
+              "name": "Easy 8k + strides",
               "completed": false,
-              "primaryZone": "Z4 threshold (162–174 / ~4:58)",
-              "durationMinutes": 62,
-              "distanceMeters": 12000,
-              "humanReadable": "WU 15min easy + 4×100m strides\n4 × 2km @ ~4:58/km, 2min jog (HR mid-Z4 ~168–172)\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
+              "durationMinutes": 54,
+              "distanceMeters": 8000,
+              "description": "Second easy run. Strides again — priming the calves/Achilles for Friday.",
+              "humanReadable": "8k easy @ 6:15–6:45/km, HR 130–140 (MID-Z2, not the ceiling)\n6 × 20s relaxed strides at the end"
             }
           ]
         },
@@ -1528,13 +1537,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w9-wed-gym",
+              "id": "w9-thu-gym",
               "sport": "strength",
               "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
+              "name": "Gym — Moderate (first back)",
               "completed": false,
-              "durationMinutes": 50
+              "durationMinutes": 50,
+              "description": "Your usual order (RDL → split squat → calf → chest → pull-ups → lateral raise → abductors → Pallof), but 2 working sets on the leg compounds instead of 3, and do NOT chase load. Heavy-leg DOMS would wreck Friday and Sunday. Back to full sets in W10."
             }
           ]
         },
@@ -1545,14 +1554,14 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
             {
               "id": "w9-fri",
               "sport": "run",
-              "type": "tempo",
-              "name": "Goal-Pace Tempo 3×2km",
-              "description": "First real race-pace touch. GP = 4:50/km (1:42); 'controlled-hard'.",
+              "type": "threshold",
+              "name": "Cruise Intervals 4×1000m (conservative)",
               "completed": false,
-              "primaryZone": "Z4/GP",
-              "durationMinutes": 55,
-              "distanceMeters": 10000,
-              "humanReadable": "WU 2.5k easy\n3 × 2km @ 4:50/km, 2min jog\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Upper Z3 / low Z4 (HR 155–165)",
+              "durationMinutes": 52,
+              "distanceMeters": 9000,
+              "description": "First quality since 23 July. Deliberately submaximal — the goal is to wake the system up, not test it.",
+              "humanReadable": "WU 2.5k easy + 4×100m strides\n4 × 1000m @ 5:00/km, 90s jog\nHR CAP: 165. Do NOT go faster than 4:55/km — this is the discipline rep.\nCD 2k easy\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1561,12 +1570,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w9-sat-r",
+              "id": "w9-sat",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest before the long run."
             }
           ]
         },
@@ -1578,13 +1587,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w9-sun",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 18k",
-              "description": "Endurance + GP. Practice exact race fueling.",
+              "name": "Long Run 13k (all easy)",
               "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 122,
-              "distanceMeters": 18000,
-              "humanReadable": "0–10k @ 6:45/km easy\n2 × 4km @ 4:50/km (GP), 1km easy float between\nGels @ 40 & 80min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z2 (121–142)",
+              "durationMinutes": 88,
+              "distanceMeters": 13000,
+              "description": "Matches your last long run (13k, 26 Jul) — zero increase, by design. No goal-pace blocks this week.",
+              "humanReadable": "13k all easy @ 6:30–6:45/km, HR 130–142\nNo fast finish. None.\nGel @ 45min to keep the fueling habit alive."
             }
           ]
         }
@@ -1592,15 +1601,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 46.0,
         "runs": 4
-      }
+      },
+      "notes": "10 days with zero running (last run 31 Jul), 18 days since last quality, 21 days since the last long run. Cardiovascular fitness is fine — connective tissue is the constraint, and it detrains faster than the engine. This week rebuilds LOAD TOLERANCE, not fitness. 4 runs (good: frequency spreads the load), ~35 km (~75% of the 46 km peak), ONE conservative quality session placed late in the week after two easy days. Strides in the easy runs are deliberate: 18 days without fast running is a calf/Achilles injury window, so we prime the tissue gently BEFORE Friday. No goal-pace work in the long run. W10 and W11 are where you build hard."
     },
     {
       "weekNumber": 10,
       "startDate": "2026-08-17",
       "endDate": "2026-08-23",
       "phase": "Specific Build",
-      "focus": "Peak volume + race specificity (4-run)",
-      "targetKm": 51,
+      "focus": "Build 1 — reintroduce threshold + goal pace (4-run)",
+      "targetKm": 44,
       "isRecoveryWeek": false,
       "runsPlanned": 4,
       "days": [
@@ -1612,12 +1622,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w10-mon",
               "sport": "run",
               "type": "recovery",
-              "name": "Recovery 9k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
+              "name": "Recovery 7k",
               "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 66,
-              "distanceMeters": 9000
+              "primaryZone": "Z1–low Z2 (≤130)",
+              "durationMinutes": 48,
+              "distanceMeters": 7000,
+              "description": "Easy flush."
             }
           ]
         },
@@ -1626,12 +1636,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w10-tue-r",
+              "id": "w10-tue",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest before quality."
             }
           ]
         },
@@ -1642,14 +1652,14 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
             {
               "id": "w10-wed",
               "sport": "run",
-              "type": "intervals",
-              "name": "VO2 6×1000m",
-              "description": "Peak VO2 session. Hold form the last two.",
+              "type": "threshold",
+              "name": "Threshold 4×2km",
               "completed": false,
-              "primaryZone": "Z5 VO2 (~4:15)",
+              "primaryZone": "Z4 threshold (162–174)",
               "durationMinutes": 62,
               "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 6×100m strides\n6 × 1000m @ 4:15/km, 400m jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "description": "The session originally written for W9. Now you are ready for it.",
+              "humanReadable": "WU 15min easy + 4×100m strides\n4 × 2km @ ~4:55/km, 2min jog (HR mid-Z4 168–172)\nCD 10min easy\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1658,13 +1668,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w10-wed-gym",
+              "id": "w10-thu",
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
               "completed": false,
-              "durationMinutes": 50
+              "durationMinutes": 55,
+              "description": "Back to full sets. RDL → split squat (6–8/leg, heavy, 1–2 RIR) → calf → chest → pull-ups → lateral raise → abductors → Pallof."
             }
           ]
         },
@@ -1676,13 +1686,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w10-fri",
               "sport": "run",
               "type": "tempo",
-              "name": "Goal-Pace 3×3km",
-              "description": "Longer GP blocks — holding 4:50 when tired.",
+              "name": "Goal-Pace Tempo 3×2km",
               "completed": false,
-              "primaryZone": "GP",
-              "durationMinutes": 60,
-              "distanceMeters": 11000,
-              "humanReadable": "WU 2.5k easy\n3 × 3km @ 4:48–4:50/km, 90s jog\nCD 1.5k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z4 (goal pace)",
+              "durationMinutes": 52,
+              "distanceMeters": 9000,
+              "description": "First goal-pace work of the build.",
+              "humanReadable": "WU 2.5k easy\n3 × 2km @ 4:50/km, 2min jog\nCD 2k easy\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1691,12 +1701,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w10-sat-r",
+              "id": "w10-sat",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest."
             }
           ]
         },
@@ -1708,13 +1718,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w10-sun",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 20k",
-              "description": "Biggest long run. Strong GP finish on tired legs = race rehearsal.",
+              "name": "Long Run 17k + GP blocks",
               "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 136,
-              "distanceMeters": 20000,
-              "humanReadable": "0–8k @ 6:45/km\n3 × 4km @ 4:50/km (GP), 1km easy float\nFull race-day fueling + hydration | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z2 base + GP blocks",
+              "durationMinutes": 110,
+              "distanceMeters": 17000,
+              "description": "Long run rebuilt +4k on W9, with the first goal-pace work under fatigue.",
+              "humanReadable": "0–9k @ 6:45/km easy\n2 × 3km @ 4:50/km (GP), 1km easy float between\nRemainder easy\nGels @ 40 & 80min\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -1722,14 +1732,15 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 51.0,
         "runs": 4
-      }
+      },
+      "notes": "First real build week. Two quality sessions return. Paces are HR-governed — if W9 went well these should feel controlled."
     },
     {
       "weekNumber": 11,
       "startDate": "2026-08-24",
       "endDate": "2026-08-30",
       "phase": "Specific Build",
-      "focus": "Race-simulation peak (4-run)",
+      "focus": "Peak — sharpen VO2 + the goal-pace dress rehearsal",
       "targetKm": 49,
       "isRecoveryWeek": false,
       "runsPlanned": 4,
@@ -1743,11 +1754,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "sport": "run",
               "type": "recovery",
               "name": "Recovery 8k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
               "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 59,
-              "distanceMeters": 8000
+              "primaryZone": "Z1–low Z2 (≤130)",
+              "durationMinutes": 55,
+              "distanceMeters": 8000,
+              "description": "Easy flush."
             }
           ]
         },
@@ -1756,12 +1767,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w11-tue-r",
+              "id": "w11-tue",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest."
             }
           ]
         },
@@ -1773,13 +1784,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w11-wed",
               "sport": "run",
               "type": "intervals",
-              "name": "VO2 4×1000m (sharp)",
-              "description": "Reduced reps, crisp. Last big top-end before sharpening.",
+              "name": "VO2 5×1000m",
               "completed": false,
-              "primaryZone": "Z5 (~4:10)",
-              "durationMinutes": 52,
-              "distanceMeters": 9000,
-              "humanReadable": "WU 15min + strides\n4 × 1000m @ 4:10–4:15/km, 400m jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z5 (VO2, 4:15–4:25)",
+              "durationMinutes": 60,
+              "distanceMeters": 11000,
+              "description": "Ceiling work — raises the roof your threshold sits under.",
+              "humanReadable": "WU 15min + 6×100m strides\n5 × 1000m @ 4:15–4:20/km, 400m jog\nCD 10min easy\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1788,13 +1799,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w11-wed-gym",
+              "id": "w11-thu",
               "sport": "strength",
               "type": "strength",
               "name": "Gym — Power",
-              "description": "Explosive full-body: 3–4×4–6 reps fast (jump squats, trap-bar, med-ball) + core. Low fatigue, keeps power.",
               "completed": false,
-              "durationMinutes": 50
+              "durationMinutes": 45,
+              "description": "Lighter, faster, explosive intent. 2 sets on compounds. Taper the gym from here."
             }
           ]
         },
@@ -1807,12 +1818,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "sport": "run",
               "type": "tempo",
               "name": "GP Primer 2×3km",
-              "description": "Light touch before Sunday's big sim.",
               "completed": false,
-              "primaryZone": "GP",
-              "durationMinutes": 50,
-              "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\n2 × 3km @ 4:50/km, 2min jog\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z4 (goal pace)",
+              "durationMinutes": 56,
+              "distanceMeters": 10000,
+              "description": "Keep it controlled — Sunday is the big one.",
+              "humanReadable": "WU 2.5k easy\n2 × 3km @ 4:50/km, 2min jog\nCD 2k easy\nPacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
             }
           ]
         },
@@ -1821,12 +1832,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w11-sat-r",
+              "id": "w11-sat",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": false,
+              "description": "Rest before the rehearsal."
             }
           ]
         },
@@ -1838,13 +1849,13 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
               "id": "w11-sun",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 21k",
-              "description": "RACE SIMULATION — the key confidence session. Rehearse everything: kit, gels, caffeine timing, pre-run meal ~3h before.",
+              "name": "DRESS REHEARSAL — 20k with 10k @ GP",
               "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 142,
-              "distanceMeters": 21000,
-              "humanReadable": "0–5k @ 6:40/km easy\n5–19k = 14km @ 4:50/km (GP), even effort, hold form\n19–21k easy\nYour dress rehearsal for 1:42. | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "primaryZone": "Z2 + sustained goal pace",
+              "durationMinutes": 125,
+              "distanceMeters": 20000,
+              "description": "The single most important session of the block. Holding goal pace under fatigue IS your limiter — this is the test of it.",
+              "humanReadable": "0–6k @ 6:40/km easy\n6–16k = 10km @ 4:50/km (GP), EVEN effort, hold form\n16–20k easy\nFull race-day fuelling + hydration rehearsal\nPacing: even/neg split — the first 2k of the GP block MUST feel too easy (your Olomouc fix)."
             }
           ]
         }
@@ -1852,7 +1863,8 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 47.0,
         "runs": 4
-      }
+      },
+      "notes": "Peak week. Sunday is the dress rehearsal — 10k continuous at goal pace inside a 20k run. Compressed from the original 14k@GP to reflect the shortened build."
     },
     {
       "weekNumber": 12,
