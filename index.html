@@ -164,7 +164,7 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
     <!-- Plan Data (will be replaced by CLI) -->
     <script type="application/json" id="plan-data">
 {
-  "version": "1.4",
+  "version": "1.7",
   "meta": {
     "id": "usti-half-2026-09-19",
     "athlete": "Sebastian Rod",
@@ -173,7 +173,7 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
     "planStartDate": "2026-06-15",
     "planEndDate": "2026-09-20",
     "createdAt": "2026-06-14T00:00:00Z",
-    "updatedAt": "2026-08-09T18:00:00Z",
+    "updatedAt": "2026-08-09T20:30:00Z",
     "totalWeeks": 14,
     "generatedBy": "Claude Coach",
     "goal": {
@@ -182,7 +182,7 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "pb": "1:53:22 (Karlovy Vary, 16 May 2026)"
     },
     "weeklySkeleton": "Mon easy-recovery · Tue rest · Wed Quality 1 · Thu gym · Fri Quality 2 (build wks) · Sat rest · Sun long. No quality/test follows the long run; gym is its own day.",
-    "revision": "v1.4 (9 Aug 2026): Thailand block ran to 12 km over 2 weeks (0 km in W8; last run 31 Jul). Build shifted one week right. W9 rebuilt as a graded re-entry (~35 km, 4 runs, ONE conservative quality session, 13k easy long run, strides reintroduced for tissue prep). W10 takes the old W9 content, W11 the old W10 content with a compressed 20k dress rehearsal. W12–W14 (Birell, taper, race) unchanged.",
+    "revision": "v1.4 (9 Aug 2026): Thailand block ran to 12 km over 2 weeks (0 km in W8; last run 31 Jul). Build shifted one week right. W9 rebuilt as a graded re-entry (~35 km, 4 runs, ONE conservative quality session, 13k easy long run, strides reintroduced for tissue prep). W10 takes the old W9 content, W11 the old W10 content with a compressed 20k dress rehearsal. W12–W14 (Birell, taper, race) unchanged. | v1.5 (9 Aug): logged all 30 completed activities (16 Jun–31 Jul Strava + self-reported villa session) onto their actual dates with real distance/pace/HR notes and per-week actual-vs-target adherence. | v1.6 (9 Aug): W1–W8 rebuilt as a pure activity LOG — only sessions actually completed, on their real dates. All un-done planned sessions removed; no rest days on training days; gym shown only where it was actually done. W9+ remain the forward plan. | v1.7: villa swim HIIT recategorised as swim (renders blue).",
     "blockFocus": {
       "title": "Fix the Fade",
       "weakness": "Speed-rich, endurance-limited. You can hit any pace; you can't yet hold it. Shows up as a chronic positive split.",
@@ -469,15 +469,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w1-mon",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 5k",
-              "description": "Zone 2, conversational. First run back — gentle, legs will feel the race.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 33,
-              "distanceMeters": 5000
+              "id": "rest-2026-06-15",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -486,12 +483,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w1-tue-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-06-16-0",
+              "sport": "run",
+              "type": "easy",
+              "name": "5k Zone 2",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 33,
+              "distanceMeters": 5018,
+              "description": "6:36/km · HR 129 avg · genuinely easy",
+              "humanReadable": "5.02 km · 33 min · 6:36/km · RE 6\n6:36/km · HR 129 avg · genuinely easy"
             }
           ]
         },
@@ -500,15 +501,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w1-wed",
+              "id": "act-2026-06-17-0",
               "sport": "run",
               "type": "easy",
-              "name": "Easy 6k",
-              "description": "Zone 2, conversational. Add 4×15s relaxed strides if legs feel good.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 40,
-              "distanceMeters": 6000
+              "name": "6k Zone 2",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 39,
+              "distanceMeters": 6022,
+              "description": "6:26/km · HR 135 avg · upper Z2",
+              "humanReadable": "6.02 km · 39 min · 6:26/km · RE 8\n6:26/km · HR 135 avg · upper Z2"
             }
           ]
         },
@@ -517,13 +519,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w1-thu",
+              "id": "act-2026-06-18-0",
               "sport": "strength",
               "type": "strength",
-              "name": "Gym — Maintenance",
-              "description": "Light full-body 2×8–10 easy + core. Touch the movements, no soreness.",
-              "completed": false,
-              "durationMinutes": 50
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 80,
+              "distanceMeters": 0,
+              "description": "80 min full-body",
+              "humanReadable": "80 min · RE 9\n80 min full-body"
             }
           ]
         },
@@ -532,12 +537,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w1-fri-r",
+              "id": "rest-2026-06-19",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -546,12 +551,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w1-sat-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-06-20-0",
+              "sport": "run",
+              "type": "long",
+              "name": "10k easy run",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 72,
+              "distanceMeters": 10025,
+              "description": "7:14/km · HR 125 avg · textbook aerobic long run, minimal drift",
+              "humanReadable": "10.03 km · 72 min · 7:14/km · RE 13\n7:14/km · HR 125 avg · textbook aerobic long run, minimal drift"
             }
           ]
         },
@@ -560,15 +569,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w1-sun",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 10k",
-              "description": "Zone 2, conversational. Easy aerobic, no pace pressure — time on feet.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 67,
-              "distanceMeters": 10000
+              "id": "rest-2026-06-21",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         }
@@ -576,7 +582,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 21.0,
         "runs": 3
-      }
+      },
+      "actualKm": 21.1,
+      "actualRuns": 3,
+      "adherence": "100% of 21 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 2,
@@ -593,15 +603,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w2-mon",
+              "id": "act-2026-06-22-0",
               "sport": "run",
               "type": "recovery",
-              "name": "Recovery 7k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
-              "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 51,
-              "distanceMeters": 7000
+              "name": "7k Rolling Zone 2",
+              "completed": true,
+              "primaryZone": "Z1",
+              "durationMinutes": 49,
+              "distanceMeters": 7021,
+              "description": "7:01/km · 87 m climb",
+              "humanReadable": "7.02 km · 49 min · 7:01/km · RE 11\n7:01/km · 87 m climb"
             }
           ]
         },
@@ -610,12 +621,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w2-tue-r",
+              "id": "rest-2026-06-23",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -624,16 +635,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w2-wed",
+              "id": "act-2026-06-24-0",
               "sport": "run",
               "type": "fartlek",
-              "name": "Fartlek 8k",
-              "description": "Z2 base with 6×1min surges to ~5:00/km feel, 90s easy between. Relaxed.",
-              "completed": false,
-              "primaryZone": "Z2/Z4",
-              "durationMinutes": 52,
-              "distanceMeters": 8000,
-              "humanReadable": "WU 2.5k easy\n6 × (1min @ ~5:00/km, 90s easy)\nCD 2k easy + 5×20s strides"
+              "name": "8k Fartlek",
+              "completed": true,
+              "primaryZone": "Z2–Z4",
+              "durationMinutes": 51,
+              "distanceMeters": 8026,
+              "description": "Surges ~4:20/km (prescribed 5:00) · HR into Z4 · over-cooked",
+              "humanReadable": "8.03 km · 51 min · 6:25/km · RE 16\nSurges ~4:20/km (prescribed 5:00) · HR into Z4 · over-cooked"
             }
           ]
         },
@@ -642,13 +653,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w2-wed-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
-              "completed": false,
-              "durationMinutes": 50
+              "id": "rest-2026-06-25",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -657,12 +667,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w2-fri-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-06-26-0",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 103,
+              "distanceMeters": 0,
+              "description": "103 min (rest-inflated, not over-training)",
+              "humanReadable": "103 min · RE 13\n103 min (rest-inflated, not over-training)"
             }
           ]
         },
@@ -671,12 +685,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w2-sat-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-06-27-0",
+              "sport": "run",
+              "type": "long",
+              "name": "14k rolling easy",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 99,
+              "distanceMeters": 14021,
+              "description": "7:03/km · HR 142 avg · evening heat run, well managed",
+              "humanReadable": "14.02 km · 99 min · 7:03/km · RE 23\n7:03/km · HR 142 avg · evening heat run, well managed"
             }
           ]
         },
@@ -685,16 +703,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w2-sun",
-              "sport": "run",
-              "type": "long",
-              "name": "Long Run 14k",
-              "description": "Easy Z2. Rehearse race fuel: 1 gel ~45–50min in (same products as Prague/KV).",
-              "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 95,
-              "distanceMeters": 14000,
-              "humanReadable": "0–14k @ 6:45–7:00/km, HR Z2. Gel @ ~45min."
+              "id": "rest-2026-06-28",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         }
@@ -702,7 +716,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 29.0,
         "runs": 3
-      }
+      },
+      "actualKm": 29.1,
+      "actualRuns": 3,
+      "adherence": "100% of 29 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 3,
@@ -719,15 +737,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w3-mon",
+              "id": "act-2026-06-29-0",
               "sport": "run",
               "type": "recovery",
-              "name": "Recovery 5k",
+              "name": "5k Zone 2",
               "completed": true,
-              "primaryZone": "Z1 (≤120)",
-              "durationMinutes": 36,
-              "distanceMeters": 5000,
-              "description": "Short pre-test flush. Done."
+              "primaryZone": "Z1",
+              "durationMinutes": 35,
+              "distanceMeters": 5017,
+              "description": "7:01/km · pre-test flush",
+              "humanReadable": "5.02 km · 35 min · 7:01/km · RE 7\n7:01/km · pre-test flush"
             }
           ]
         },
@@ -736,16 +755,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w3-tue-test",
+              "id": "act-2026-06-30-0",
               "sport": "run",
               "type": "test",
               "name": "30-min Threshold Test",
               "completed": true,
-              "primaryZone": "Z4/Z5",
-              "durationMinutes": 50,
-              "distanceMeters": 9500,
-              "description": "DONE. Result: 5.911k in 30:00 = 5:05/km avg in 28°C/62%RH (heat-suppressed → ~5:00 cool). LTHR (final-20-min avg) 172 → zones anchored to 171. Positive split (km1 4:14 → faded 5:40) — pacing is the fix.",
-              "humanReadable": "COMPLETED 30 Jun. Threshold pace ~5:00/km cool · LTHR 171 · zones locked."
+              "primaryZone": "Z4/Z5 max",
+              "durationMinutes": 30,
+              "distanceMeters": 5911,
+              "description": "5:05/km avg · 28°C/62%RH · LTHR measured 172 → zones anchored 171 · km1 4:14 faded to 5:40",
+              "humanReadable": "5.91 km · 30 min · 5:05/km · RE 45\n5:05/km avg · 28°C/62%RH · LTHR measured 172 → zones anchored 171 · km1 4:14 faded to 5:40"
             }
           ]
         },
@@ -754,12 +773,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w3-wed-r",
+              "id": "rest-2026-07-01",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "completed": false,
-              "description": "Full rest — recover from the max test. Sleep, eat, hydrate."
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -768,13 +787,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w3-thu-gym",
+              "id": "act-2026-07-02-0",
               "sport": "strength",
               "type": "strength",
-              "name": "Gym — Strength",
-              "completed": false,
-              "durationMinutes": 50,
-              "description": "Full-body 45–55min, your dialled-in order: RDL → split squat (6–8/leg, heavy) → calf → chest → pull-ups → lateral raise → abductors → Pallof. 1–2 RIR on the leg compounds."
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 105,
+              "distanceMeters": 0,
+              "description": "105 min",
+              "humanReadable": "105 min · RE 13\n105 min"
             }
           ]
         },
@@ -783,15 +805,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w3-fri",
+              "id": "act-2026-07-03-0",
               "sport": "run",
               "type": "easy",
-              "name": "Easy 8k",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
+              "name": "8k Zone 2",
+              "completed": true,
+              "primaryZone": "Z2",
               "durationMinutes": 54,
-              "distanceMeters": 8000,
-              "description": "The added 4th run — pure easy aerobic volume (your highest-leverage adaptation). Conversational the whole way. NOT a quality day."
+              "distanceMeters": 8018,
+              "description": "6:42/km · HR 139 avg · kept it easy",
+              "humanReadable": "8.02 km · 54 min · 6:42/km · RE 13\n6:42/km · HR 139 avg · kept it easy"
             }
           ]
         },
@@ -800,12 +823,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w3-sat-r",
+              "id": "rest-2026-07-04",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "completed": false,
-              "description": "Rest before the long run. Optional 5k shakeout only if you feel great."
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -814,16 +837,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w3-sun",
+              "id": "act-2026-07-05-0",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 15k",
-              "completed": false,
-              "primaryZone": "Z2 base + Z3 finish",
-              "durationMinutes": 100,
-              "distanceMeters": 15000,
-              "description": "Easy with a controlled Z3 finish — practise holding form/pace as fatigue builds (your limiter).",
-              "humanReadable": "0–12k @ 6:30–6:45/km (Z2)\n12–15k @ ~5:25–5:30/km (Z3, controlled even effort)\nGel @ 45min"
+              "name": "12k Z2 + 3k Z3",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 98,
+              "distanceMeters": 15021,
+              "description": "6:31/km · HR 146 avg · Z3 finish run by HR, power rose into the finish",
+              "humanReadable": "15.02 km · 98 min · 6:31/km · RE 42\n6:31/km · HR 146 avg · Z3 finish run by HR, power rose into the finish"
             }
           ]
         }
@@ -832,7 +855,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
         "totalKm": 29.5,
         "runs": 3
       },
-      "notes": "You asked for 4 runs + gym; Mon recovery + Tue test already done. The 4th run is an EASY aerobic run on Friday (your free window) — channels the extra time into aerobic volume, not extra intensity. Wed rest after the max test; gym Thu; long run Sun. Keep Friday genuinely easy — if anything feels off after the test, skip it."
+      "notes": "You asked for 4 runs + gym; Mon recovery + Tue test already done. The 4th run is an EASY aerobic run on Friday (your free window) — channels the extra time into aerobic volume, not extra intensity. Wed rest after the max test; gym Thu; long run Sun. Keep Friday genuinely easy — if anything feels off after the test, skip it.",
+      "actualKm": 34.0,
+      "actualRuns": 4,
+      "adherence": "92% of 37 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 4,
@@ -849,15 +876,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w4-mon",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 6k",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:00–6:45)",
-              "durationMinutes": 42,
-              "distanceMeters": 6000,
-              "description": "Relaxed pre-trip shakeout. Keep it genuinely easy."
+              "id": "rest-2026-07-06",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -866,16 +890,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w4-tue",
+              "id": "act-2026-07-07-0",
               "sport": "run",
               "type": "threshold",
-              "name": "Cruise Intervals 5×1000m",
-              "completed": false,
-              "primaryZone": "Z4 threshold (162–174 / ~5:00)",
+              "name": "5×1k Cruise Intervals",
+              "completed": true,
+              "primaryZone": "Z4 threshold",
               "durationMinutes": 58,
-              "distanceMeters": 10000,
-              "description": "Key run quality, done fresh before you travel. Paces off your test.",
-              "humanReadable": "WU 15min easy + 4×100m strides\n5 × 1000m @ 5:00/km, 90s jog (HR settle into 162–174)\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "distanceMeters": 10014,
+              "description": "Reps 4:56/4:56/4:52/4:53/4:45 @ HR 154–164 · NEGATIVE split · big fitness signal",
+              "humanReadable": "10.01 km · 58 min · 5:48/km · RE 39\nReps 4:56/4:56/4:52/4:53/4:45 @ HR 154–164 · NEGATIVE split · big fitness signal"
             }
           ]
         },
@@ -884,16 +908,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w4-wed-bike",
+              "id": "act-2026-07-08-0",
               "sport": "bike",
               "type": "endurance",
-              "name": "Lipno Ride 1 — Short & Easy",
-              "completed": false,
-              "primaryZone": "Bike Z2 (HR ~115–135, conversational)",
-              "durationMinutes": 50,
-              "distanceMeters": 18000,
-              "description": "Travel/arrival day — just a short easy spin to open the legs. The lakeside cycle path is perfect.",
-              "humanReadable": "45–60min easy. Conversational. Nothing hard."
+              "name": "Lipno Ride 1 — Evening Ride",
+              "completed": true,
+              "primaryZone": "Bike Z1–Z2",
+              "durationMinutes": 72,
+              "distanceMeters": 18516,
+              "description": "18.5 km · 284 m climb · easy spin",
+              "humanReadable": "18.52 km · 72 min · 3:52/km · RE 8\n18.5 km · 284 m climb · easy spin"
             }
           ]
         },
@@ -902,16 +926,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w4-thu-bike",
+              "id": "act-2026-07-09-0",
               "sport": "bike",
               "type": "endurance",
               "name": "Lipno Ride 2 — Long Endurance",
-              "completed": false,
-              "primaryZone": "Bike Z2 w/ optional Z3 efforts",
-              "durationMinutes": 180,
-              "distanceMeters": 65000,
-              "description": "Full day free = your big aerobic session of the week, and zero impact — a direct, joint-friendly hit on your endurance limiter. Mostly easy; add tempo only if you feel good.",
-              "humanReadable": "2.5–4h endurance, mostly easy (HR ~115–135).\nOptional mid-ride: 3–4 × 8–10min tempo on climbs (HR ~145–158, comfortably hard), full recovery between.\nFuel ~60g carbs/hr + drink steadily — it's long and warm. Pace it: don't smash the first hour."
+              "completed": true,
+              "primaryZone": "Bike Z1–Z2",
+              "durationMinutes": 243,
+              "distanceMeters": 71056,
+              "description": "71 km · 4h03 · 620 m climb · avg HR 107 (Z1) — huge easy aerobic block",
+              "humanReadable": "71.06 km · 243 min · 3:26/km · RE 40\n71 km · 4h03 · 620 m climb · avg HR 107 (Z1) — huge easy aerobic block"
             }
           ]
         },
@@ -920,12 +944,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w4-fri-r",
+              "id": "rest-2026-07-10",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "completed": false,
-              "description": "No training — enjoy the trip. Travel/relax. Legs recover from the big ride before Sunday's long run."
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -934,12 +958,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w4-sat-r",
+              "id": "rest-2026-07-11",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "completed": false,
-              "description": "Full rest + travel back. Sleep, eat, hydrate. Adaptation happens here."
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -948,16 +972,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w4-sun",
+              "id": "act-2026-07-12-0",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 16k",
-              "completed": false,
-              "primaryZone": "Z2 base + Z3 finish",
-              "durationMinutes": 108,
-              "distanceMeters": 16000,
-              "description": "Legs should feel fresh after non-impact riding. Hold form on the finish — that's your limiter.",
-              "humanReadable": "0–11k @ 6:30–6:45/km (Z2)\n11–16k @ ~5:25/km (Z3, controlled)\nGel @ 45min. If warm, run by HR."
+              "name": "11k Z2 + 5k Z3",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 102,
+              "distanceMeters": 16025,
+              "description": "6:21/km · 201 m climb · controlled Z3 finish",
+              "humanReadable": "16.03 km · 102 min · 6:20/km · RE 45\n6:21/km · 201 m climb · controlled Z3 finish"
             }
           ]
         }
@@ -967,7 +991,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
         "runs": 4
       },
       "ridesPlanned": 2,
-      "notes": "Lipno trip: Wed SHORT easy ride, Thu LONG ride (full day free), Fri OFF. Threshold run before you travel (Tue), long run after (Sun). No gym this week — riding + the trip cover it; gym resumes W5. Bike HR runs ~5–10 bpm below run HR at the same effort."
+      "notes": "Lipno trip: Wed SHORT easy ride, Thu LONG ride (full day free), Fri OFF. Threshold run before you travel (Tue), long run after (Sun). No gym this week — riding + the trip cover it; gym resumes W5. Bike HR runs ~5–10 bpm below run HR at the same effort.",
+      "actualKm": 26.0,
+      "actualRuns": 2,
+      "adherence": "81% of 32 km",
+      "actualBikeKm": 89.6,
+      "actualGymSessions": 0
     },
     {
       "weekNumber": 5,
@@ -984,15 +1013,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w5-mon",
-              "sport": "run",
-              "type": "recovery",
-              "name": "Recovery 8k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
-              "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 59,
-              "distanceMeters": 8000
+              "id": "rest-2026-07-13",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1001,12 +1027,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w5-tue-r",
+              "id": "rest-2026-07-14",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1015,16 +1041,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w5-wed",
+              "id": "act-2026-07-15-0",
               "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 4×1600m",
-              "description": "Longer threshold reps — biggest aerobic-power driver for the half.",
-              "completed": false,
-              "primaryZone": "Z4 threshold",
-              "durationMinutes": 62,
-              "distanceMeters": 11000,
-              "humanReadable": "WU 15min + 4×100m strides\n4 × 1600m @ 5:00/km, 2min jog\nCD 10min easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "type": "easy",
+              "name": "8k easy run",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 54,
+              "distanceMeters": 8022,
+              "description": "6:46/km · midday",
+              "humanReadable": "8.02 km · 54 min · 6:46/km · RE 34\n6:46/km · midday"
             }
           ]
         },
@@ -1033,13 +1059,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w5-wed-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Strength",
-              "description": "Full-body 45–55min: squat/hinge/lunge (3×6–8), single-leg, push/pull, core (plank, side-plank, dead bug, bird dog). On your hard day so easy days stay easy.",
-              "completed": false,
-              "durationMinutes": 50
+              "id": "act-2026-07-16-0",
+              "sport": "run",
+              "type": "intervals",
+              "name": "Intervals — 4×1600m",
+              "completed": true,
+              "primaryZone": "Z4/Z5",
+              "durationMinutes": 68,
+              "distanceMeters": 11037,
+              "description": "Reps 4:54/4:57/5:12/5:23 · faded · midday heat + too-hot opening km (4:49)",
+              "humanReadable": "11.04 km · 68 min · 6:11/km · RE 63\nReps 4:54/4:57/5:12/5:23 · faded · midday heat + too-hot opening km (4:49)"
             }
           ]
         },
@@ -1048,16 +1077,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w5-fri",
+              "id": "act-2026-07-17-0",
               "sport": "run",
               "type": "tempo",
-              "name": "Tempo 2×12min",
-              "description": "Sub-threshold blocks.",
-              "completed": false,
+              "name": "Tempo — 2×12 min",
+              "completed": true,
               "primaryZone": "Z4",
-              "durationMinutes": 50,
-              "distanceMeters": 9000,
-              "humanReadable": "WU 2.5k easy\n2 × 12min @ ~5:00/km, 3min easy\nCD 2k easy | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "durationMinutes": 52,
+              "distanceMeters": 9017,
+              "description": "Blocks 4:48 then 4:45 @ HR 158–161 (sub-threshold) · NEGATIVE split · best session of the block",
+              "humanReadable": "9.02 km · 52 min · 5:44/km · RE 36\nBlocks 4:48 then 4:45 @ HR 158–161 (sub-threshold) · NEGATIVE split · best session of the block"
             }
           ]
         },
@@ -1066,12 +1095,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w5-sat-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-07-18-0",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 85,
+              "distanceMeters": 0,
+              "description": "85 min",
+              "humanReadable": "85 min · RE 13\n85 min"
             }
           ]
         },
@@ -1080,16 +1113,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w5-sun",
+              "id": "act-2026-07-19-0",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 18k",
-              "description": "Longest so far. Last 6k @ steady (Z3 ~5:25). Dial fueling.",
-              "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 122,
-              "distanceMeters": 18000,
-              "humanReadable": "0–12k @ 6:45/km\n12–18k @ ~5:25/km\nGel @ 40 & 80min"
+              "name": "12k Z2 + 6k Z3",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 106,
+              "distanceMeters": 18187,
+              "description": "5:49/km · Z3 finish 5:35→5:15, power rising · easy portion ran hot",
+              "humanReadable": "18.19 km · 106 min · 5:49/km · RE 48\n5:49/km · Z3 finish 5:35→5:15, power rising · easy portion ran hot"
             }
           ]
         }
@@ -1097,7 +1130,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 46.0,
         "runs": 4
-      }
+      },
+      "actualKm": 46.3,
+      "actualRuns": 4,
+      "adherence": "101% of 46 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 6,
@@ -1114,15 +1151,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w6-mon",
-              "sport": "run",
-              "type": "recovery",
-              "name": "Recovery 9k",
-              "description": "Very easy — day after the long run. Slower than easy, just flush the legs.",
-              "completed": false,
-              "primaryZone": "Z1 (≤120 / 7:15–7:45)",
-              "durationMinutes": 66,
-              "distanceMeters": 9000
+              "id": "rest-2026-07-20",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1131,12 +1165,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w6-tue-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-07-21-0",
+              "sport": "run",
+              "type": "easy",
+              "name": "9k Z2",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 57,
+              "distanceMeters": 9110,
+              "description": "6:18/km",
+              "humanReadable": "9.11 km · 57 min · 6:18/km · RE 14\n6:18/km"
             }
           ]
         },
@@ -1145,16 +1183,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w6-wed",
-              "sport": "run",
-              "type": "threshold",
-              "name": "Cruise Intervals 3×1000m",
-              "description": "Reduced volume, keep a touch of intensity.",
-              "completed": false,
-              "primaryZone": "Z4",
-              "durationMinutes": 46,
-              "distanceMeters": 8000,
-              "humanReadable": "WU 15min + strides\n3 × 1000m @ 5:00/km, 90s jog\nCD 10min | Pacing: even/neg split — the first rep MUST feel too easy (your Olomouc fix)."
+              "id": "rest-2026-07-22",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1163,13 +1197,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w6-wed-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Gym — Maintenance",
-              "description": "Light full-body 2×8–10 easy + core. Touch the movements, no soreness.",
-              "completed": false,
-              "durationMinutes": 50
+              "id": "act-2026-07-23-0",
+              "sport": "run",
+              "type": "threshold",
+              "name": "Intervals — 3×1k",
+              "completed": true,
+              "primaryZone": "Z4 threshold",
+              "durationMinutes": 49,
+              "distanceMeters": 8124,
+              "description": "Reps 4:40/4:50/4:42 @ HR 157–164 · no fade · threshold clearly under 4:50",
+              "humanReadable": "8.12 km · 49 min · 6:05/km · RE 26\nReps 4:40/4:50/4:42 @ HR 157–164 · no fade · threshold clearly under 4:50"
             }
           ]
         },
@@ -1178,12 +1215,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w6-fri-r",
+              "id": "rest-2026-07-24",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1192,12 +1229,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w6-sat-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-07-25-0",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 83,
+              "distanceMeters": 0,
+              "description": "83 min",
+              "humanReadable": "83 min · RE 14\n83 min"
             }
           ]
         },
@@ -1206,16 +1247,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w6-sun",
+              "id": "act-2026-07-26-0",
               "sport": "run",
               "type": "long",
-              "name": "Long Run 14k",
-              "description": "Easy only. Recharge.",
-              "completed": false,
-              "primaryZone": "Z2 base",
-              "durationMinutes": 95,
-              "distanceMeters": 14000,
-              "humanReadable": "All Z2, 6:45–7:00/km"
+              "name": "3k Z2 + 10k Z3",
+              "completed": true,
+              "primaryZone": "Z2 + Z3 finish",
+              "durationMinutes": 80,
+              "distanceMeters": 13028,
+              "description": "6:10/km · 168 m climb · HR pinned 148–155 for 10k, zero drift — best HR discipline of the block",
+              "humanReadable": "13.03 km · 80 min · 6:10/km · RE 51\n6:10/km · 168 m climb · HR pinned 148–155 for 10k, zero drift — best HR discipline of the block"
             }
           ]
         }
@@ -1223,7 +1264,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 31.0,
         "runs": 3
-      }
+      },
+      "actualKm": 30.3,
+      "actualRuns": 3,
+      "adherence": "98% of 31 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 7,
@@ -1240,15 +1285,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w7-mon",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 7k",
-              "description": "Zone 2, conversational. Run early AM or evening, ~20–30s/km slower, hydrate hard. + 4×15s strides.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 46,
-              "distanceMeters": 7000
+              "id": "rest-2026-07-27",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1257,12 +1299,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w7-tue-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-07-28-0",
+              "sport": "run",
+              "type": "easy",
+              "name": "7k easy",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 46,
+              "distanceMeters": 7023,
+              "description": "6:32/km · HR 145 avg · Prague, morning of departure",
+              "humanReadable": "7.02 km · 46 min · 6:32/km · RE 17\n6:32/km · HR 145 avg · Prague, morning of departure"
             }
           ]
         },
@@ -1271,15 +1317,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w7-wed",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 6k",
-              "description": "Zone 2, conversational. Easy shakeout — effort over pace in the heat.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 40,
-              "distanceMeters": 6000
+              "id": "rest-2026-07-29",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1288,12 +1331,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w7-thu-r",
+              "id": "rest-2026-07-30",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1302,12 +1345,28 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w7-fri-r",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "id": "act-2026-07-31-0",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Weight Training",
+              "completed": true,
+              "primaryZone": "",
+              "durationMinutes": 47,
+              "distanceMeters": 0,
+              "description": "47 min · Thailand",
+              "humanReadable": "47 min · RE 8\n47 min · Thailand"
+            },
+            {
+              "id": "act-2026-07-31-1",
+              "sport": "run",
+              "type": "easy",
+              "name": "Lunch Run",
+              "completed": true,
+              "primaryZone": "Z2",
+              "durationMinutes": 37,
+              "distanceMeters": 5000,
+              "description": "~7:23/km · 11:30 start · progressive 7:29→6:16, HR 131→157 · only run in Thailand",
+              "humanReadable": "5.00 km · 37 min · 7:23/km · RE 15\n~7:23/km · 11:30 start · progressive 7:29→6:16, HR 131→157 · only run in Thailand"
             }
           ]
         },
@@ -1316,12 +1375,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w7-sat-r",
+              "id": "rest-2026-08-01",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1330,15 +1389,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w7-sun",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 11k",
-              "description": "Zone 2, conversational. Easy long by feel/HR (cap Z2). Walk breaks fine if hot. No heroics on holiday.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 73,
-              "distanceMeters": 11000
+              "id": "rest-2026-08-02",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         }
@@ -1346,7 +1402,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 24.0,
         "runs": 3
-      }
+      },
+      "actualKm": 12.0,
+      "actualRuns": 2,
+      "adherence": "50% of 24 km",
+      "actualGymSessions": 1
     },
     {
       "weekNumber": 8,
@@ -1363,15 +1423,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Monday",
           "workouts": [
             {
-              "id": "w8-mon",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 7k",
-              "description": "Zone 2, conversational. Easy, heat-adjusted effort.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 46,
-              "distanceMeters": 7000
+              "id": "rest-2026-08-03",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1380,12 +1437,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w8-tue-r",
+              "id": "rest-2026-08-04",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1394,16 +1451,16 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w8-wed",
-              "sport": "run",
-              "type": "fartlek",
-              "name": "Heat Fartlek 7k",
-              "description": "Z2 + 8×30s relaxed pickups. Keeps turnover without stress.",
-              "completed": false,
-              "primaryZone": "Z2",
-              "durationMinutes": 47,
-              "distanceMeters": 7000,
-              "humanReadable": "WU 2k easy\n8 × (30s brisk, 90s easy)\nCD 2k easy"
+              "id": "act-2026-08-05-0",
+              "sport": "swim",
+              "type": "intervals",
+              "name": "Swim HIIT + bodyweight (villa)",
+              "completed": true,
+              "primaryZone": "HIIT / cross-training",
+              "durationMinutes": 60,
+              "distanceMeters": 0,
+              "description": "~60 min · self-reported, not on Strava · exact date unknown",
+              "humanReadable": "60 min\n~60 min · self-reported, not on Strava · exact date unknown"
             }
           ]
         },
@@ -1412,12 +1469,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w8-thu-r",
+              "id": "rest-2026-08-06",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1426,12 +1483,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Friday",
           "workouts": [
             {
-              "id": "w8-fri-r",
+              "id": "rest-2026-08-07",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1440,12 +1497,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w8-sat-r",
+              "id": "rest-2026-08-08",
               "sport": "rest",
               "type": "rest",
               "name": "Rest Day",
-              "description": "Full rest — sleep, mobility, eat well. Adaptation happens on rest days.",
-              "completed": false
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         },
@@ -1454,15 +1511,12 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
           "dayOfWeek": "Sunday",
           "workouts": [
             {
-              "id": "w8-sun",
-              "sport": "run",
-              "type": "easy",
-              "name": "Easy 12k",
-              "description": "Zone 2, conversational. Travel day Aug 9 — if flying, move to Mon or skip. Don't force it.",
-              "completed": false,
-              "primaryZone": "Z2 (121–142 / 6:30–7:00)",
-              "durationMinutes": 80,
-              "distanceMeters": 12000
+              "id": "rest-2026-08-09",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Rest Day",
+              "completed": true,
+              "description": "No training logged."
             }
           ]
         }
@@ -1470,7 +1524,11 @@ window.addEventListener('load',function(){setTimeout(ffOpen,650)});
       "summary": {
         "totalKm": 26.0,
         "runs": 3
-      }
+      },
+      "actualKm": 0.0,
+      "actualRuns": 0,
+      "adherence": "0% of 26 km",
+      "actualGymSessions": 0
     },
     {
       "weekNumber": 9,
