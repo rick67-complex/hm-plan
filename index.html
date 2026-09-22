@@ -358,6 +358,13 @@ ${a.join(`
  .settings-modal button,.confirm-dialog button,.mobile-tools button{min-height:44px}
  .confirm-dialog{max-width:calc(100vw - 24px);padding:18px!important}
 }
+/* The desktop shell is a flex row. Mobile must change the parent layout too. */
+@media screen and (max-width:850px){
+ #app{width:100%;min-width:0;max-width:100%}
+ .app{display:block!important;width:100%;min-width:0;max-width:100%}
+ .app>.sidebar{position:static!important;display:block!important;width:100%!important;min-width:0;max-width:100%;height:auto!important;box-sizing:border-box}
+ .app>.main-content{display:block;flex:none!important;width:100%!important;min-width:0;max-width:100%;margin-left:0!important;box-sizing:border-box}
+}
 </style></head>
   <body>
     <style id="ff-style">
